@@ -11411,7 +11411,6 @@ button.scroll-top:focus {
   display: flex;
   justify-content: start;
   align-items: center;
-  font-size: 46px;
   cursor: pointer;
   margin: 0 7px 0 0;
   border-radius: 20px;
@@ -11422,7 +11421,7 @@ button.scroll-top:focus {
 
 .hero-content-wrap h1 {
   -webkit-text-stroke: 0px rgb(255, 255, 255);
-  font-size: 46px !important;
+  font-size: 46px;
 }
 
 .circles {
