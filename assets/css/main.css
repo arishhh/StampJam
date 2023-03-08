@@ -5263,48 +5263,6 @@ screen and (max-height: 300px) {
   background: #869791;
 }
 
-/*================
- Template Name: Hostlar Hosting Provider with WHMCS Template
- Description: All type of web hosting provider or company with WHMCS template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
-
-=======================*/
-/*TABLE OF CONTENTS*/
-/*=====================
-01. RESET CSS
-02. BASE TYPOGRAPHY
-03. PRE DEFINE CLASS CSS
-04. HEADER MENU CSS
-05. HERO SECTION CSS
-06. CUSTOM VPS PLAN CSS
-07. PRICING SECTION CSS
-08. TEAM SECTION CSS
-09. CLIENT SECTION CSS
-10. FAQ CSS
-11. PROMO SECTION CSS
-12. FEATURE SECTION CSS
-13. START AND TRANSFER SECTION CSS
-14. DOMAIN NAME LIST CSS
-15. FEATURE TAB CSS
-16. POPULAR DOMAIN LIST CSS
-17. PRELOADER CSS
-18. DOMAIN SEARCH FROM
-19. NETWORK MAP CSS
-20. SUBMIT REQUEST FORM CSS
-21. VPS HOSTING CSS
-22. SERVICES STATUS CSS
-23. PARTNER SECTION CSS
-24. CLIENT RATTING OR REVIEW CSS
-24. 404 PAGES CSS
-25. BREADCRUMB CSS
-26. FIXED SIDEBAR CSS
-27. LOGIN SIGN UP CSS
-28. BLOG SECTION CSS
-29. CONTACT US CSS
-30. BACK TO TOP CSS
-31. FOOTER CSS
-=======================*/
 /* -----------------------------------------
            02. BASE TYPOGRAPHY
 -------------------------------------------- */
@@ -5317,6 +5275,20 @@ body {
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.nav-item.active .nav-link{
+  color: #00faaf;
+}
+
+.main_container {
+  width: 100%;
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
+  /* background: #fff; */
+  /* overflow: hidden; */
 }
 
 /* line 58, src/assets/scss/custom/_style.scss */
@@ -5801,7 +5773,7 @@ select.form-control.has-value {
   width: 100%;
   line-height: 0;
   direction: ltr;
-  bottom: 0;
+  bottom: -1%;
   z-index: 10;
   /* -webkit-transform: rotate(180deg);
   transform: rotate(180deg); */
@@ -5914,6 +5886,7 @@ select.form-control.has-value {
 /* line 482, src/assets/scss/custom/_style.scss */
 .header-main {
   position: fixed;
+  max-width: 1800px;
   /* display: block; */
   width: 100%;
   z-index: 15;
@@ -6041,7 +6014,10 @@ button.navbar-toggler.btn {
 
 /* line 568, src/assets/scss/custom/_style.scss */
 .header-main .active>.custom-nav-link {
-  color: #2ee4a3;
+  color: #00faaf;
+}
+.footer_links .active>.custom-nav-link {
+  color: #00faaf;
 }
 
 /* line 572, src/assets/scss/custom/_style.scss */
@@ -11526,7 +11502,7 @@ button.scroll-top:focus {
   border-radius: 20px;
   color: yellow;
   text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-  animation: glow 20s linear infinite;
+  animation: glow 5s linear infinite;
 }
 
 .hero-content-wrap h1 {
@@ -12222,6 +12198,20 @@ button.scroll-top:focus {
     filter: hue-rotate(360deg);
   }
 }
+@media only screen and (min-width: 1800px) and (max-width: 1600px) {
+  .header-nav-last-item .btn {
+    font-size: 18px;
+  }
+  .custom-nav-link{
+    font-size: 18px;
+  }
+  .navbar_main_{
+    height:60px;
+  }
+  .hs-menu-initialized{
+    height: 60px;
+  }
+}
 
 @media (max-width: 768px) {
   .no_flex {
@@ -12241,6 +12231,7 @@ button.scroll-top:focus {
     top: 83%;
   }
 }
+
 
 @media only screen and (max-width: 1170px) {
   .footer-bottom .row {

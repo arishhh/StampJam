@@ -1,11 +1,5 @@
 "use strict";
 
-/*================
- Template Name: Hostlar Hosting Provider with WHMCS Template
- Description: All type of web hosting provider or company with WHMCS template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
-=======================*/
 // TABLE OF CONTENTS
 // 1. preloader
 // 2. mega menu js
@@ -40,6 +34,18 @@ $(document).ready(function() {
       stylesheet.prop("disabled", true);
       altStylesheet.prop("disabled", false);
     }
+  });
+});
+
+// Navlinks active class
+
+$(document).ready(function () {
+  $('a.nav-link').click(function(e) {
+
+      $('.nav-item.active').removeClass('active');
+
+      var $parent = $(this).parent();
+      $parent.addClass('active');
   });
 });
 
