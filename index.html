@@ -55,11 +55,24 @@
         h1 {
             font-family: "Poppins", sans-serif;
             text-transform: uppercase;
-            font-size: 40px;
+            font-size: 3em;
         }
 
         .contactus h1 a {
             text-transform: lowercase !important;
+        }
+
+        @media only screen and (max-width: 700px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -67,7 +80,7 @@
 <body>
     <div class="main_container">
         <div class="contactus">
-            <h1>Contact us at<br> <a href="mailto:admin@impulsionstudio.com">admin@impulsionstudio.comi</a< /h1>
+            <h1>Contact us at<br> <a href="mailto:admin@impulsionstudio.com">admin@impulsionstudio.com</a< /h1>
         </div>
     </div>
 </body>
