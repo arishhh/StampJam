@@ -5496,12 +5496,12 @@ b {
 
 /* line 195, src/assets/scss/custom/_style.scss */
 a {
-  color: #035ded;
+  color: #00faaf;
 }
 
 /* line 199, src/assets/scss/custom/_style.scss */
 a:hover {
-  color: #031974;
+  color: #00faaf;
   text-decoration: none;
 }
 
@@ -12105,6 +12105,66 @@ button.scroll-top:focus {
   color: #031974;
 }
 
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*/
+.single_template{
+  background: #e7faff;
+  position: relative;
+  height: 180px;
+  max-height: 180px;
+  transition: all .37s ease-in;
+}
+.primary-solid{
+  border: 1px solid #00faaf;
+  background: #00faaf;
+  color: #000;
+  border-radius: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .37s ease-in;
+}
+.single_template:hover{
+  border: 1px solid #00faaf;
+}
+.primary-solid:hover{
+  background: #004bc3;
+  color: #fff;
+}
+.single_template:hover .primary-solid{
+  opacity: 1;
+  visibility: visible;
+}
+.tab-pane .col-lg-4 {
+  margin-bottom: 10px;
+}
+
+#v-pills-tab{
+  flex-direction: column !important;
+}
+
+.single_template .action-wrap a {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.nav-pills-custom .nav-link {
+  color: #fff;
+  background: #1e0a3b;
+  position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #00faaf;
+  background: #1e0a3b;
+}
+
+.bg-white{
+  background-color: #10051e !important;
+}
 /* footer css end */
 
 @keyframes animate {
@@ -12231,6 +12291,21 @@ button.scroll-top:focus {
   h2 {
     font-size: 1.6rem;
   }
+  .single_template .primary-solid{
+    opacity: 1;
+    visibility: visible;
+  }
+  .single_template{
+    border: 1px solid #00faaf;
+  }
+  #v-pills-tab{
+    flex-direction: unset !important;
+    gap: 1rem;
+    justify-content: center;
+  }
+  #v-pills-tab .nav-link {
+    width: 45% !important;
+  }
 
   .text-block-21 ul li {
     list-style: disc;
@@ -12269,6 +12344,12 @@ button.scroll-top:focus {
 
   .footer_logo {
     margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 570px){
+  #v-pills-tab .nav-link {
+    width: 100% !important;
   }
 }
 
