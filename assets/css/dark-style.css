@@ -5774,7 +5774,7 @@ select.form-control.has-value {
   width: 100%;
 }
 
-.shapes2 {
+.shapes1 {
   display: none;
 }
 
@@ -12207,7 +12207,7 @@ button.scroll-top:focus {
 
 
 @media only screen and (max-width: 768px) {
-  .shapes1 {
+  .shapes2 {
     display: none;
   }
 
