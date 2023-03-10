@@ -11753,7 +11753,7 @@ button.scroll-top:focus {
 ::-webkit-scrollbar {
   width: 15px;
 }
-.tab-pane::-webkit-scrollba {
+.tab-pane::-webkit-scrollbar {
   width: 10px;
 }
 .side_tabs::-webkit-scrollbar, .side_tabs::-webkit-scrollbar-thumb, .side_tabs::-webkit-scrollbar-track{
@@ -11769,11 +11769,6 @@ button.scroll-top:focus {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--header-gradiant);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #0d1536;
 }
 
 .nav-pills .p-3 {
