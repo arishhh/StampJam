@@ -12431,6 +12431,8 @@ button.scroll-top:focus {
   }
 }
 
+/* Media Query */
+
 @media only screen and (max-width: 1170px) {
   .footer-bottom .row {
     flex-wrap: wrap;
