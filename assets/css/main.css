@@ -5773,7 +5773,7 @@ select.form-control.has-value {
   width: 100%;
   line-height: 0;
   direction: ltr;
-  bottom: -7%;
+  bottom: -2%;
   z-index: 10;
   /* -webkit-transform: rotate(180deg);
   transform: rotate(180deg); */
@@ -6059,7 +6059,7 @@ button.navbar-toggler.btn {
   #navBar.navbar-collapse {
     padding: 20px;
     background: var(--header-gradiant);
-    margin-top: 17px;
+    margin-top: 6px;
     border-radius: 30px;
   }
 

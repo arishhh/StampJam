@@ -5889,8 +5889,8 @@
   /* line 6, src/assets/scss/vendors/bootstrap.min.css */
   .navbar-brand {
     display: inline-block;
-    /* padding-top: .3125rem;
-    padding-bottom: .3125rem; */
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
