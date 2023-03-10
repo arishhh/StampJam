@@ -11840,6 +11840,9 @@ button.scroll-top:focus {
 .side_tabs{
   display: block;
 }
+.hero-btn{
+  z-index: 20;
+}
 /* footer css end */
 
 @keyframes animate {
