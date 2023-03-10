@@ -11872,6 +11872,7 @@ button.scroll-top:focus {
 @media (max-width: 768px) {
   .no_flex {
     flex-wrap: wrap !important;
+    gap: 10px;
   }
 
   .c-col {
