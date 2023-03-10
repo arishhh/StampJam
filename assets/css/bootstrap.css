@@ -5896,6 +5896,8 @@
     line-height: inherit;
     white-space: nowrap;
     /* width: 10%; */
+    display: flex;
+    align-items: center;
   }
   
   /* line 6, src/assets/scss/vendors/bootstrap.min.css */
