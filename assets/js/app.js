@@ -21,7 +21,12 @@
 // 18. chat api js
 // 19. image gallery js
 // 20. contact form js
-
+// Open Side bars
+$(document).ready(function(){
+  $('#openNav').click(function() {
+    $('.side_tabs').toggle("slide");
+  });
+});
 // Hamburger
 $('.hamburger').click(function() {
   $( this ).toggleClass( "active" );

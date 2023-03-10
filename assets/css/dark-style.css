@@ -7847,15 +7847,13 @@ svg.promo-bg {
 
 /* line 1954, src/assets/scss/custom/_style.scss */
 .popular-price {
-  -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
-  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
   border: 2px solid #035ded !important;
 }
 
 /* line 1959, src/assets/scss/custom/_style.scss */
 .popular-price:hover {
-  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12) !important;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 0 0 1px #ebebeb;
+  box-shadow: 0 0 0 1px #ebebeb;
 }
 
 /*pricing switch style*/
@@ -11836,6 +11834,12 @@ button.scroll-top:focus {
 .bg-white {
   background-color: #10051e !important;
 }
+#openNav{
+  display: none;
+}
+.side_tabs{
+  display: block;
+}
 /* footer css end */
 
 @keyframes animate {
@@ -11958,7 +11962,15 @@ button.scroll-top:focus {
   .products {
     padding-top: 0;
   }
-
+  #openNav{
+    display: block;
+  }
+  .side_tabs {
+    max-height: 40vh;
+  }
+  .side_tabs{
+    display: none;
+  }
   .h2,
   h2 {
     font-size: 1.6rem;
@@ -11972,7 +11984,7 @@ button.scroll-top:focus {
   }
   #v-pills-tab {
     flex-direction: unset !important;
-    gap: 1rem;
+    gap: 5px;
     justify-content: center;
   }
   #v-pills-tab .nav-link {
@@ -12069,4 +12081,10 @@ button.scroll-top:focus {
 
 .single_template {
   margin-top: 10px !important;
+}
+
+#openNav{
+  color: #00faaf;
+  font-size: 30px;
+  padding-left: 25px;
 }
