@@ -12122,7 +12122,9 @@ button.scroll-top:focus {
 ::-webkit-scrollbar {
   width: 14px;
 }
-
+.tab-pane::-webkit-scrollbar {
+  width: 10px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #5543ca;
