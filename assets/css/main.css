@@ -11708,9 +11708,14 @@ button.scroll-top:focus {
 ::-webkit-scrollbar {
   width: 15px;
 }
-.tab-pane::-webkit-scrollbar {
+.tab-pane::-webkit-scrollbar, .side_tabs::-webkit-scrollbar {
   width: 10px;
 }
+.side_tabs::-webkit-scrollbar, .side_tabs::-webkit-scrollbar-thumb, .side_tabs::-webkit-scrollbar-track{
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}            
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -11761,13 +11766,14 @@ button.scroll-top:focus {
 }
 .tab-pane {
   height: 100%;
-  max-height: 100vh;
+  max-height: 93vh;
   overflow-y: auto;
   overflow-x: hidden
 }
 #v-pills-tab{
   flex-direction: column !important;
 }
+
 
 .single_template .action-wrap a {
   font-size: 13px;
@@ -12037,3 +12043,13 @@ button.scroll-top:focus {
   opacity: 1;
 }
 
+.side_tabs{
+  height: 100%;
+  max-height: 93vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.single_template {
+  margin-top: 10px !important;
+}
