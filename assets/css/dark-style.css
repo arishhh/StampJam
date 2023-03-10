@@ -12142,6 +12142,11 @@ button.scroll-top:focus {
   background: #0d1536; 
 }
 
+.nav-pills .p-3{
+  padding: 13px !important;
+}
+
+
 /* Custom Scrollbar */
 .single_template{
   background: #e7faff;
