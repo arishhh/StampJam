@@ -12297,7 +12297,8 @@ button.scroll-top:focus {
 .tab-pane {
   height: 100%;
   max-height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden
 }
 #v-pills-tab{
   flex-direction: column !important;
