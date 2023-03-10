@@ -10436,6 +10436,9 @@ button.scroll-top:focus {
   -webkit-transition: 1s ease;
   transition: 1s ease;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* line 4028, src/assets/scss/custom/_style.scss */
