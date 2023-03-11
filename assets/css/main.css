@@ -11801,8 +11801,14 @@ button.scroll-top:focus {
 
 .dropdown-menu.show{
   transform: translate3d(0, 45px, 0px) !important;
+  right: 0;
+  text-align: center;
 }
 
+.unq-drpdwn{
+  width: 75%;
+  text-align: center;
+}
 
 .dropdown-menu{
   background-color: #e7faff;
@@ -11862,6 +11868,7 @@ button.scroll-top:focus {
 .dropdown_div{
   display: none;
 }
+
 
 @media (min-width: 1280px) {
   .tabs-to-dropdown .nav-wrapper {

@@ -30,7 +30,7 @@ function generateDropdownMarkup(container) {
   const firstTextLink = $navPills.find("li:first-child a").text();
   const $items = $navPills.find("li");
   const markup = `
-    <div class="dropdown d-md-none">
+    <div class="dropdown d-md-none unq-drpdwn">
       <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         ${firstTextLink}
       </button>

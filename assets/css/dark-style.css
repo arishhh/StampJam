@@ -11913,6 +11913,13 @@ button.scroll-top:focus {
 
 .dropdown-menu.show{
   transform: translate3d(0px, 45px, 0px) !important;
+  right: 0;
+  text-align: center;
+}
+
+.unq-drpdwn{
+  width: 75%;
+  text-align: center;
 }
 .dropdown-item:focus, .dropdown-item:hover {
   color: #16181b;
