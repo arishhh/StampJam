@@ -11800,7 +11800,17 @@ button.scroll-top:focus {
 }
 
 .dropdown-menu.show{
-  transform: translate3d(0px, 45px, 0px) !important;
+  transform: translate3d(0, 45px, 0px) !important;
+}
+
+.nav-container{
+  padding-left: 0;
+}
+
+.dropdown-menu{
+  background-color: #e7faff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 1.2px solid #00faaf !important;
 }
 
 /* footer css end */
@@ -11855,10 +11865,6 @@ button.scroll-top:focus {
 .dropdown_div{
   display: none;
 }
-.nav-container{
-  padding-left: 0;
-}
-
 
 @media (min-width: 1280px) {
   .tabs-to-dropdown .nav-wrapper {
