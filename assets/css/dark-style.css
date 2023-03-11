@@ -11736,6 +11736,65 @@ button.scroll-top:focus {
   color: #031974;
 }
 
+/* Footer CSS Ends */
+
+/* New Tabs Pane Starts */
+.tabs-to-dropdown .dropdown-toggle{
+  border: 1px solid #00faaf;
+  background: #00faaf;
+  color: #000;
+  border-radius: 100px;
+  transition: all .37s ease-in;
+  font-size: 1rem;
+}
+.tabs-to-dropdown .dropdown-item {
+  font-size: 1rem;
+}
+
+.tabs-to-dropdown .nav-wrapper {
+  padding: 15px;
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12); */
+}
+
+.tabs-to-dropdown .nav-wrapper a {
+  color: var(--darkgreen);
+}
+
+.tabs-to-dropdown .nav-pills .nav-link.active {
+  background-color: var(--darkgreen);
+}
+
+.tabs-to-dropdown .nav-pills li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.tabs-to-dropdown .tab-content .container-fluid {
+  max-width: 1250px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.tabs-to-dropdown .dropdown-menu {
+  border: none;
+}
+
+.tabs-to-dropdown .dropdown-item {
+  padding: 14px 28px;
+}
+
+.tabs-to-dropdown .dropdown-item:active {
+  color: var(--white);
+}
+.dropdown_div{
+  display: none;
+}
+@media (min-width: 1280px) {
+  .tabs-to-dropdown .nav-wrapper {
+    padding: 15px 30px;
+  }
+}
+/* New Tabs Pane Ends */
+
 /*
 *
 * ==========================================
@@ -11978,6 +12037,9 @@ button.scroll-top:focus {
   .h2,
   h2 {
     font-size: 1.6rem;
+  }
+  .dropdown_div{
+    display: block;
   }
   .single_template .primary-solid {
     opacity: 1;

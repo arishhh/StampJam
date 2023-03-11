@@ -4516,12 +4516,13 @@
     float: left;
     min-width: 10rem;
     padding: .5rem 0;
+    color: #fff !important;
     margin: .125rem 0 0;
     font-size: 1rem;
     color: #212529;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #1e0a3b;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: .25rem;
@@ -4734,7 +4735,7 @@
   .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #e9ecef;
+    background-color: #2b0e57;
   }
   
   /* line 6, src/assets/scss/vendors/bootstrap.min.css */
