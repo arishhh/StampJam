@@ -11902,6 +11902,15 @@ button.scroll-top:focus {
 .hero-btn{
   z-index: 20;
 }
+
+.dropdown-menu{
+  background-color: #1e0a3b !important;
+  color: #fff;
+}
+
+.dropdown-menu.show{
+  transform: translate3d(0px, 45px, 0px) !important;
+}
 /* footer css end */
 
 @keyframes animate {
