@@ -11922,11 +11922,6 @@ button.scroll-top:focus {
 }
 /* footer css end */
 
-
-.nav-container{
-  padding-left: 0;
-}
-
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -11968,6 +11963,9 @@ button.scroll-top:focus {
   .sixStar1 {
     right: 18%;
     top: 83%;
+  }
+  .nav-container{
+    padding-left: 0;
   }
 }
 

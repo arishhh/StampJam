@@ -11803,9 +11803,6 @@ button.scroll-top:focus {
   transform: translate3d(0, 45px, 0px) !important;
 }
 
-.nav-container{
-  padding-left: 0;
-}
 
 .dropdown-menu{
   background-color: #e7faff;
@@ -11929,6 +11926,10 @@ button.scroll-top:focus {
     right: 18%;
     top: 83%;
   }
+  .nav-container{
+    padding-left: 0;
+  }
+  
 }
 
 
