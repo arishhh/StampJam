@@ -10997,6 +10997,9 @@ button.scroll-top:focus {
 .ptb-175 {
   padding: 175px 0;
 }
+.ptb-135 {
+  padding: 135px 0;
+}
 
 .no_flex {
   flex-wrap: nowrap;
@@ -11852,6 +11855,11 @@ button.scroll-top:focus {
 .dropdown_div{
   display: none;
 }
+.nav-container{
+  padding-left: 0;
+}
+
+
 @media (min-width: 1280px) {
   .tabs-to-dropdown .nav-wrapper {
     padding: 15px 30px;
@@ -11977,6 +11985,10 @@ button.scroll-top:focus {
 @media only screen and (max-width: 768px) {
   .shapes1 {
     display: none;
+  }
+
+  .ptb-175{
+    padding: 115px 0;
   }
 
   .product-slide.slide-1,
