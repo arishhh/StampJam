@@ -131,7 +131,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('a.nav-link').click(function (e) {
 
-    $('.nav-item.active').removeClass('active');
+    $('.nav-item.active');
 
     var $parent = $(this).parent();
     $parent.addClass('active');
