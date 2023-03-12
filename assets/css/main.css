@@ -11112,6 +11112,7 @@ button.scroll-top:focus {
   height: 110px;
   animation-delay: 3s;
   border-radius: 50%;
+  bottom: -150px;
 }
 
 .circles li:nth-child(7) {
@@ -11120,6 +11121,7 @@ button.scroll-top:focus {
   height: 150px;
   animation-delay: 7s;
   border-radius: 50%;
+  bottom: -150px;
 }
 
 .circles li:nth-child(8) {
