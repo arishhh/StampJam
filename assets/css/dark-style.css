@@ -6130,7 +6130,7 @@ button.navbar-toggler.btn {
 
   /* line 597, src/assets/scss/custom/_style.scss */
   #navBar.navbar-collapse {
-    padding: 20px;
+    /* padding: 20px; */
     background: var(--header-gradiant);
     margin-top: 6px;
     border-radius: 30px;
