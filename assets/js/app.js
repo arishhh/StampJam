@@ -21,6 +21,21 @@
 // 18. chat api js
 // 19. image gallery js
 // 20. contact form js
+
+// Popup Alert
+$("#pricing_open").click(function () {
+  $(".fixed_side1").toggleClass("fixed_side1_");
+  $(".pricing_popup").toggleClass("pricing_popup_");
+});
+$(".col5_close").click(function () {
+  $(".fixed_side1").removeClass("fixed_side1_"),
+    $(".pricing_popup").removeClass("pricing_popup_");
+});
+
+$(".close").click(function () {
+  $(".alert").css("display", "none");
+});
+
 // New Tab Content
 const $tabsToDropdown = $(".tabs-to-dropdown");
 
