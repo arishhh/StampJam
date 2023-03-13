@@ -14153,3 +14153,11 @@
     }
   }
   
+
+  .color-6-bg {
+    background: rgb(255 0 59 / 15%) !important;
+}
+
+.color-6 {
+    color: #00faaf !important;
+}
