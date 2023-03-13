@@ -7753,9 +7753,7 @@ svg.promo-bg {
 .popular-price  .pricing-header .price{
   color: #fff;
 }
-.pricing-feature-list li{
-  color: #fff;
-}
+
 /* line 1959, src/assets/scss/custom/_style.scss */
 .popular-price:hover {
   -webkit-box-shadow: 0 0 0 1px #ebebeb;
