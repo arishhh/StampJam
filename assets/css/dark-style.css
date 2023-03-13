@@ -11813,7 +11813,7 @@ button.scroll-top:focus {
 ::-webkit-scrollbar {
   width: 15px;
 }
-.tab-pane::-webkit-scrollbar {
+.tab-pane::-webkit-scrollbar, .pricing_popup::-webkit-scrollbar {
   width: 10px;
 }
 .side_tabs::-webkit-scrollbar, .side_tabs::-webkit-scrollbar-thumb, .side_tabs::-webkit-scrollbar-track{
