@@ -14152,9 +14152,19 @@ a.text-dark:hover {
   }
 }
 
+.card.single-pricing-pack {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 0 1px #ebebeb;
+  box-shadow: 0 0 0 1px #ebebeb;
+  border-radius: 1rem !important;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
 
 .color-6-bg {
-  background: rgb(0 35 255 / 15%) !important;
+  background: rgb(16 5 31/ 55%) !important;
 }
 
 .color-6 {

@@ -7655,6 +7655,7 @@ svg.promo-bg {
   box-shadow: 0 0 0 1px #ebebeb;
   border-radius: 1rem !important;
   border: 2px solid transparent;
+  overflow: hidden;
 }
 
 /* line 1888, src/assets/scss/custom/_style.scss */
