@@ -7849,7 +7849,7 @@ svg.promo-bg {
 /* line 1954, src/assets/scss/custom/_style.scss */
 .popular-price {
   border: 2px solid #004bc3 !important;
-  background: #b066dc !important;
+  background: #b166dccf !important;
 }
 
 .popular-price  .pricing-header .price{
