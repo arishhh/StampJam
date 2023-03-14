@@ -7863,6 +7863,8 @@ svg.promo-bg {
 .popular-price:hover {
   -webkit-box-shadow: 0 0 0 1px #ebebeb;
   box-shadow: 0 0 0 1px #ebebeb;
+  border-color: #035ded !important;
+
 }
 
 /*pricing switch style*/
