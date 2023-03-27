@@ -5361,7 +5361,10 @@ h4 {
 p:not(:last-child) {
   margin-bottom: 1.25em;
 }
-
+.card-body p{
+  margin-bottom: .25em;
+  color: #242323;
+}
 /* line 114, src/assets/scss/custom/_style.scss */
 ul,
 ol {

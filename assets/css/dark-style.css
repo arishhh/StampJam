@@ -7851,7 +7851,10 @@ svg.promo-bg {
   border: 2px solid #004bc3 !important;
   background: #0e6aff72 !important;
 }
-
+.card-body p{
+  margin-bottom: 0;
+  color: #fff !important;
+}
 .popular-price  .pricing-header .price{
   color: #fff;
 }

@@ -14166,9 +14166,15 @@ a.text-dark:hover {
 .color-6-bg {
   background: rgb(16 5 31/ 55%) !important;
 }
-
+.popular-price p{
+  color: #000 !important; 
+}
 .color-6 {
   color: #fff !important;
+}
+
+.single-pricing-pack{
+  height: 600px;
 }
 
 .pointing{
