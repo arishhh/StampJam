@@ -14174,7 +14174,7 @@ a.text-dark:hover {
 }
 
 .single-pricing-pack{
-  height: 600px;
+  height: 650px;
 }
 
 .pointing{
@@ -14194,5 +14194,16 @@ a.text-dark:hover {
   }
   100% {
     transform:translateX(4px);
+  }
+}
+
+@media screen and (max-width: 935px){
+  .single-pricing-pack{
+    height: 700px;
+  }
+}
+@media screen and (max-width: 768px){
+  .single-pricing-pack{
+    height: fit-content;
   }
 }
