@@ -14176,7 +14176,18 @@ a.text-dark:hover {
 .single-pricing-pack{
   height: 650px;
 }
-
+.popular_img{
+  top: -24%;
+  position: absolute;
+  width: 30%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.popular_img img{
+  width: 100%;
+  object-fit: contain;
+  /* transform: rotate(335deg); */
+}
 .pointing{
   width: fit-content;
   display: flex;
