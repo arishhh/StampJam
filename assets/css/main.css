@@ -12442,7 +12442,7 @@ body.fixed_side1{
       }
   }
 @media(max-width:950px){
-	.price-box{
+	.box-features-section{
 		height:fit-content;
 	}
 }
