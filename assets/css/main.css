@@ -12267,7 +12267,7 @@ body.fixed_side1{
   .price-box{
       margin: 10px;
       width: 430px;
-      border-radius: 5px;
+      border-radius: 25px;
       height: auto;
   }
   .price-box h4{
@@ -12441,6 +12441,11 @@ body.fixed_side1{
           flex-grow: 1;
       }
   }
+@media(max-width:950px){
+	.price-box{
+		height:fit-content;
+	}
+}
   @media(max-width:810px){
      .price-box-container{
          width: 100%;
