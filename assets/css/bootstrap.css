@@ -14196,6 +14196,11 @@ a.text-dark:hover {
   gap: .7rem;
   overflow: hidden;
 }
+body.scroll_stop{
+  height: 100vh;
+  overflow: hidden;
+}
+
 .pointme{
   animation: 1.4s aniArrow02 infinite;
 }

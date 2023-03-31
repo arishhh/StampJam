@@ -26,10 +26,12 @@
 $("#pricing_open").click(function () {
   $(".fixed_side1").toggleClass("fixed_side1_");
   $(".pricing_popup").toggleClass("pricing_popup_");
+  $("body").toggleClass("scroll_stop")
 });
 $(".col5_close").click(function () {
   $(".fixed_side1").removeClass("fixed_side1_"),
     $(".pricing_popup").removeClass("pricing_popup_");
+    $("body").removeClass("scroll_stop")
 });
 
 $(".close").click(function () {
