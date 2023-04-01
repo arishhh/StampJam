@@ -14152,6 +14152,10 @@ a.text-dark:hover {
   }
 }
 
+.right .img-fluid{
+  border-radius:10px;
+}
+
 .card.single-pricing-pack {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
