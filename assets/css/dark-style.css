@@ -5876,6 +5876,14 @@ select.form-control.has-value {
 .height-lg-100vh {
   min-height: 100vh;
 }
+.gradient-bg {
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#031974),
+      to(#1934a7)) !important;
+  background: linear-gradient(90deg, #031974, #1934a7) !important;
+}
 
 @media (max-width: 576px) {
   /* line 425, src/assets/scss/custom/_style.scss */
@@ -5949,6 +5957,7 @@ select.form-control.has-value {
 .gradient-bg .topbar-text ul li a {
   color: #ffffff;
 }
+
 
 /* line 473, src/assets/scss/custom/_style.scss */
 .gradient-bg .topbar-text ul li a:hover {
