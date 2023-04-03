@@ -6062,6 +6062,10 @@ input[type=submit].btn-block {
   }
 }
 
+.pricing_box{
+  gap:1rem;
+}
+
 @media (max-width: 767.98px) {
 
   /* line 6, src/assets/scss/vendors/bootstrap.min.css */
@@ -6081,6 +6085,11 @@ input[type=submit].btn-block {
   }
 
   .primary-solid-btn {
+    margin-top: 10px;
+  }
+
+  
+  .pprice {
     margin-top: 10px;
   }
 }

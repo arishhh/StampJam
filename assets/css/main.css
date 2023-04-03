@@ -12450,10 +12450,4 @@ body.fixed_side1{
   .pricing_flex{
     gap: 2rem;
   }
-  .pricing_bottom{
-    flex-wrap:wrap;
-  }
-  .pprice{
-    width: 100%;
-  }
 }
