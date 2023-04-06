@@ -469,3 +469,20 @@ jQuery(function ($) {
   }
 });
   // JQuery end
+
+  // Get the popup element
+const popup = document.getElementById("popup");
+
+// Function to close the popup
+function closePopup() {
+    $(".fixed_side1").removeClass("fixed_side1_"),
+    $(".pricing_popup").removeClass("pricing_popup_");
+    $("body").removeClass("scroll_stop")
+}
+
+// Add event listener to the document object
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closePopup();
+  }
+});
