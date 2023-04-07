@@ -11113,11 +11113,14 @@ button.scroll-top:focus {
 
 .single-service-plane {
   background: #1c122e;
-  height: 270px;
-  max-height: 270px;
+  /* height: 270px;
+  max-height: 270px; */
   margin:15px 0;
 }
-
+.service-plane-content img {
+  width: 100%;
+  object-fit: contain;
+}
 .width-90 {
   width: 90%;
   max-width: 90%;
