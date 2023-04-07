@@ -11923,8 +11923,30 @@ body.fixed_side1{
   border: 1px solid #2967e6;
   padding-top: 2.5rem;
 }
-
+.requestfeature_popup{
+  position: fixed;
+  left: 0%;
+  right: -200%;
+  width: 90%;
+  margin: 0 auto;
+  /* top: 15%; */
+  z-index: 9999;
+  padding: 20px 25px 25px;
+  background: #e7faff;
+  border-top: 5px solid var(--color-secondary);
+  /* transform: scale(0) translateY(-50%); */
+  transition: 0.5s;
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: auto; 
+  border-radius: 15px;
+  border: 1px solid #2967e6;
+  padding-top: 2.5rem;
+}
 .pricing_popup_{
+  right: 0;
+}
+.requestfeature_popup_{
   right: 0;
 }
 
@@ -12445,6 +12467,11 @@ body.fixed_side1{
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.submit-request-form{
+  padding:1rem 0;
+}
+
 @media only screen and (max-width: 1100px) and (min-width: 992px)   {
   .pricing_popup .pricing_middle{
     height:370px;

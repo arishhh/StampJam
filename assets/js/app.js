@@ -22,15 +22,32 @@
 // 19. image gallery js
 // 20. contact form js
 
-// Popup Alert
+// Pricing Alert
 $("#pricing_open").click(function () {
-  $(".fixed_side1").toggleClass("fixed_side1_");
-  $(".pricing_popup").toggleClass("pricing_popup_");
-  $("body").toggleClass("scroll_stop")
+  $(".fixed_side1").addClass("fixed_side1_");
+  $(".pricing_popup").addClass("pricing_popup_");
+  $("body").addClass("scroll_stop")
 });
 $(".col5_close").click(function () {
   $(".fixed_side1").removeClass("fixed_side1_"),
     $(".pricing_popup").removeClass("pricing_popup_");
+    $("body").removeClass("scroll_stop")
+});
+
+$(".close").click(function () {
+  $(".alert").css("display", "none");
+});
+
+
+// Feature Request Alert
+$("#pricing_open").click(function () {
+  $(".fixed_side1").addClass("fixed_side1_");
+  $(".requestfeature_popup").addClass("requestfeature_popup_");
+  $("body").addClass("scroll_stop")
+});
+$(".col5_close").click(function () {
+  $(".fixed_side1").removeClass("fixed_side1_"),
+    $(".requestfeature_popup").removeClass("requestfeature_popup_");
     $("body").removeClass("scroll_stop")
 });
 
@@ -476,7 +493,7 @@ const popup = document.getElementById("popup");
 // Function to close the popup
 function closePopup() {
     $(".fixed_side1").removeClass("fixed_side1_"),
-    $(".pricing_popup").removeClass("pricing_popup_");
+    $(".requestfeature_popup").removeClass("requestfeature_popup_");
     $("body").removeClass("scroll_stop")
 }
 
