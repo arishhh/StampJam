@@ -11920,7 +11920,7 @@ body.fixed_side1{
   max-height: 100vh;
   overflow-y: auto; 
   border-radius: 15px;
-  border: 4px solid #2967e6;
+  border: 1px solid #2967e6;
   padding-top: 2.5rem;
 }
 
