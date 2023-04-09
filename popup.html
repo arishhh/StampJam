@@ -47,128 +47,69 @@
          <img src="img/close.png" alt="" class="hvr-pop">
       </div>
       <!-- Start your coding from here -->
-      <section class="submit-request-form">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-md-9 col-lg-8">
-                  <div class="section-heading text-center">
-                     <h2>Feedback</h2>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12 col-lg-12">
-                     <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
-                        enctype="multipart/form-data" target="_blank">
-                        <div class="row">
-                           
-                           <div class="col-md-12 col-lg-12">
-                              <div id="full-stars-example-two">
-                                 <div class="rating-group">
-                                    <input disabled checked class="rating__input rating__input--none" name="rating"
-                                       id="rating3-none" value="0" type="radio">
-            
-                                    <label aria-label="1 star" class="rating__label" for="rating3-1"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                          <input class="rating__input" name="rating" id="rating3-1" value="1" type="radio" required>
-            
-                                    <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                          <input class="rating__input" name="rating" id="rating3-2" value="2" type="radio">
-            
-                                    <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                          <input class="rating__input" name="rating" id="rating3-3" value="3" type="radio">
-            
-                                    <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                          <input class="rating__input" name="rating" id="rating3-4" value="4" type="radio">
-            
-                                    <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                          <input class="rating__input" name="rating" id="rating3-5" value="5" type="radio">
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="col-lg-6 col-md-6 col-sm-12">
-                              <div class="form-group">
-                                 <label for="name">Your Name <span class="required">*</span></label>
-                                 <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
-                                    required>
-                              </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-12">
-                              <div class="form-group">
-                                 <label for="submitEmail">Your email <span class="required">*</span></label>
-                                 <input id="submitEmail" class="form-control" name="email" type="email"
-                                    placeholder="Email Address" required>
-                              </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12">
-                              <div class="form-group">
-                                 <label for="subj">Subject <span class="required">*</span></label>
-                                 <input id="subj" class="form-control" name="subj" type="text"
-                                    placeholder="Enter Subject" required>
-                              </div>
-                              <div class="form-group">
-                                 <label for="descr">Provide a detailed description <span
-                                       class="required">*</span></label>
-                                 <textarea id="descr" class="form-control" name="desc"
-                                    placeholder="How can we help you?" rows="4" required></textarea>
-                                 <p class="small mt-2">Please enter the details of your request. A member of our
-                                    support staff will respond as soon as possible.</p>
-                              </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                              <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
-                                 Submit Feedback
-                              </button>
-                           </div>
-                        </div>
-                     </form>
+      <div class="thankyou_container">
+         <div class="container_reciept">
+            <div class="tab"></div>
+            <div class="paid">
+               <p>Receipt Paid successfully</p>
+            </div>
+            <div class="receipt">
+               <div class="paper">
+                  <div class="title">Receipt</div>
+                  <div class="date">Date:09/04/2023</div>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>1x Premium</td>
+                           <td class="right">$2.99</td>
+                        </tr>
+                        <tr>
+                           <td>1x Gold</td>
+                           <td class="right">$2.49</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div class="sign center">
                   </div>
                </div>
             </div>
-      </section>
-      <!-- Start your coding from here -->
-      <script>
-         document.addEventListener("DOMContentLoaded", function () {
-            const select = document.getElementById('select1');
-            const nameInput = document.getElementById('name');
-            const emailInput = document.getElementById('submitEmail');
-            const fileInput = document.getElementById('upfile');
-            const descrInput = document.getElementById('descr');
-            const options = select.options;
-            nameInput.setAttribute('disabled', true);
-            emailInput.setAttribute('disabled', true);
-            fileInput.setAttribute('disabled', true);
-            descrInput.setAttribute('disabled', true);
-            select.addEventListener('change', function () {
-               if (select.value === '') {
-                  nameInput.setAttribute('disabled', true);
-                  emailInput.setAttribute('disabled', true);
-                  fileInput.setAttribute('disabled', true);
-                  descrInput.setAttribute('disabled', true);
-                  for (let i = 1; i < options.length; i++) {
-                  }
-               } else {
-                  nameInput.removeAttribute('disabled');
-                  emailInput.removeAttribute('disabled');
-                  fileInput.removeAttribute('disabled');
-                  descrInput.removeAttribute('disabled');
-               }
-               if (select.value === '') {
-                  nameInput.setAttribute('disabled', true);
-                  emailInput.setAttribute('disabled', true);
-                  fileInput.setAttribute('disabled', true);
-                  descrInput.setAttribute('disabled', true);
-               }
-            });
-         });
+            <div>
+            </div>
+         </div>
 
+         <div class="center center_heading">
+            <h1 class="text-black">
+               <div class="glowtext">
+                  <span>T</span>
+                  <span>H</span>
+                  <span>A</span>
+                  <span>N</span>
+                  <span>K</span>
+                  <span> </span>
+                  <span>Y</span>
+                  <span>O</span>
+                  <span>U</span>
+               </div>
+            </h1>
+         </div>
 
+         <div class="area">
+            <ul class="circles">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
+         </div>
 
-      </script>
+         <!-- Start your coding from here -->
+      </div>
    </div>
    <!-- Feature Form Popup Ends -->
 
@@ -1138,6 +1079,7 @@
    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
    <script src="assets/js/vendors/bootstrap-slider.min.js"></script>
    <script src="assets/js/vendors/jquery.countdown.min.js"></script>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
    <script src="assets/js/vendors/jquery.easing.min.js"></script>
    <script src="assets/js/vendors/owl.carousel.min.js"></script>
    <script src="assets/js/vendors/jquery.waypoints.min.js"></script>

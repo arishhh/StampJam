@@ -503,3 +503,11 @@ document.addEventListener("keydown", function(event) {
     closePopup();
   }
 });
+
+
+// Receipt close
+function pay()
+{
+  $(".receipt").slideUp("slow");
+  $(".paid").slideDown("slow");
+}

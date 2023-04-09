@@ -12031,7 +12031,11 @@ body.fixed_side1{
   top: 18px;
   width: 22px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 5;
+}
+.col5_close img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .pricing_popup .col5_close {
