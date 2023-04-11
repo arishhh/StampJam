@@ -12057,6 +12057,45 @@ body.fixed_side1{
   left: 0;
 }
 
+@media (max-width:1125px) {
+  .email_popup{
+    width:60% !important;
+  }
+}
+@media (max-width:930px) {
+  .email_popup{
+    width:70% !important;
+  }
+  .newletter-title h2{
+    font-size: 1.6rem;
+  }
+}
+@media (max-width:670px) {
+  .email_popup{
+    width:80% !important;
+  }
+  .newleter-content label{
+    font-size: .9rem;
+  }
+  
+  .newletter-title h2{
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:500px) {
+  .email_popup{
+    width:95% !important;
+    height: 60vh;
+    padding: .5rem;
+    padding: 1.5rem;
+
+  }
+  
+  .newletter-title h2{
+    font-size: 1.2rem;
+  }
+}
+
 /* Email Popup CSS Ends */
 .pricing_popup_{
   right: 0;
