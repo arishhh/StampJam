@@ -12576,7 +12576,7 @@ body.fixed_side1{
   justify-content: center;
 }
 .pricing_popup .pricing_middle ul li{
-  margin-bottom:0;
+  margin-bottom:10px;
 }
 .pricing_popup .pricing_box{
   /* max-height: 630px; */
