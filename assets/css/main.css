@@ -11942,15 +11942,17 @@ body.fixed_side1 {
   width: 100%;
   height: 100vh !important;
   max-height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 990;
-  transform: scale(0);
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  /* transform: scale(0); */
+  opacity: 0;
   transition: 0.5s;
   overflow: hidden !important;
 }
 
 .fixed_side1_ {
-  transform: scale(1);
+  z-index: 998;
+  opacity: 1;
 }
 
 .pricing_popup {
