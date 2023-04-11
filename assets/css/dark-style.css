@@ -12439,6 +12439,7 @@ body.fixed_side1{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top:1rem;
 }
 .pricing_box1 .pricing_type h1{
   font-weight: 700;

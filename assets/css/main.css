@@ -12478,6 +12478,7 @@ body.fixed_side1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .pricing_box1 h1 {
