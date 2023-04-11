@@ -344,6 +344,10 @@ button::-moz-focus-inner {
   border-style: none;
 }
 
+.nav-item.active{
+  color: #00faaf;
+}
+
 /* line 6, src/assets/scss/vendors/bootstrap.min.css */
 input[type=checkbox],
 input[type=radio] {

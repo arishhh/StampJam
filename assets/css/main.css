@@ -11975,6 +11975,7 @@ body.fixed_side1 {
   border-radius: 15px;
   border: 1px solid #2967e6;
   padding-top: 2.5rem;
+  display: flex;
 }
 
 .requestfeature_popup {
@@ -12573,12 +12574,12 @@ body.fixed_side1 {
   color: #EBEBEB;
 }
 
-.pricing_box2 .pricing_middle ul li span {
-  color: #131313;
+.popular_pricing .pricing_middle ul li span {
+  color: #ebebeb;
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #ebebeb;
+  background: #131313;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12590,9 +12591,8 @@ body.fixed_side1 {
   color: #EBEBEB;
 }
 
-.pricing_box2 .pricing_middle ul li p {
+.popular_pricing .pricing_middle ul li p {
   margin-bottom: 5px;
-  color: #EBEBEB;
   width: 90%;
 }
 
