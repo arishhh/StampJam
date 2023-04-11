@@ -12005,8 +12005,8 @@ body.fixed_side1 {
 
 .col5_close {
   position: absolute;
-  right: 2%;
-  top: 18px;
+  right: 1%;
+  top: 5px;
   width: 22px;
   cursor: pointer;
   z-index: 5;
@@ -12210,9 +12210,9 @@ body.fixed_side1 {
     font-size: 1rem;
   }
 
-  .our-services .row {
+  /* .our-services .row {
     gap: 10px;
-  }
+  } */
 
   .dropdown_div {
     display: block;
@@ -12367,7 +12367,7 @@ body.fixed_side1 {
   flex-direction: column;
   justify-content: space-between;
   background: #EAEAEA;
-  padding: 1.5rem;
+  padding: .7rem;
   border-radius: 25px;
   width: 50%;
 }
@@ -12474,8 +12474,12 @@ body.fixed_side1 {
   border-radius: 25px;
 }
 .popular_pricing{
-  border: 2px solid #0d1536;
-  border-top: 7px solid #0d1536;
+  border: 2px solid #6a3cc1;
+  border-top: 7px solid #6a3cc1;
+}
+.popular_pricing .badge{
+  background: #6a3cc1;
+  color: #fff;
 }
 
 .pricing_box2 .pprice h6 {
