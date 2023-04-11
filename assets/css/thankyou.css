@@ -1,0 +1,149 @@
+/* Thank You PAge CSS Here */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #89c2d9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #3a3a3a;
+  }
+  
+  h1 img {
+    animation: fadeIn 2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #3a3a3a;
+    text-decoration: none;
+    border: 2px solid #3a3a3a;
+    border-radius: 50px;
+    background-color: #50c878;
+    transition: all 0.3s;
+  }
+  
+  a:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #3a3a3a;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 50%;
+    text-align: center;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #777;
+  }
+  
+  .email-subscription {
+    margin-top: 2rem;
+  }
+  
+  input[type="email"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #3a3a3a;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+  
+    p {
+        font-size: 1rem;
+    }
+  
+    a {
+        padding: 8px 16px;
+        font-size: 1rem;
+        border-radius: 40px;
+    }
+  
+    .social-links a {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 1rem;
+    }
+  
+    .email-subscription h2 {
+        font-size: 1.5rem;
+    }
+  }
+  
+  /* Thank You Page CSS Here */
+  
