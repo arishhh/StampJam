@@ -98,7 +98,12 @@ a.download:hover{
   text-align: center;
   transition: color 0.3s;
 }
-
+.btnFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 .social-links a:hover {
   color: #777;
 }
@@ -167,6 +172,12 @@ button:hover {
 
   .email-subscription h2 {
     font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 5px 17px;
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
 
