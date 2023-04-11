@@ -11983,7 +11983,7 @@ body.fixed_side1{
   /* top: 15%; */
   z-index: 9999;
   padding: 20px 25px 25px;
-  background: #e7faff;
+  background: #fff;
   border-top: 5px solid var(--color-secondary);
   /* transform: scale(0) translateY(-50%); */
   transition: 0.5s;
@@ -12004,7 +12004,7 @@ body.fixed_side1{
   /* top: 15%; */
   z-index: 9999;
   padding: 20px 25px 25px;
-  background: #e7faff;
+  background: #fff;
   border-top: 5px solid var(--color-secondary);
   /* transform: scale(0) translateY(-50%); */
   transition: 0.5s;
@@ -12026,7 +12026,7 @@ body.fixed_side1{
   transform: translateY(-50%);
   z-index: 9999;
   padding: 20px 25px 25px;
-  background: #e7faff;
+  background: #fff;
   border-top: 5px solid var(--color-secondary);
   /* transform: scale(0) translateY(-50%); */
   transition: 0.5s;
