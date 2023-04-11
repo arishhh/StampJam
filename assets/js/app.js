@@ -494,6 +494,7 @@ const popup = document.getElementById("popup");
 function closePopup() {
     $(".fixed_side1").removeClass("fixed_side1_"),
     $(".requestfeature_popup").removeClass("requestfeature_popup_");
+    $(".email_popup").removeClass("email_popup_");
     $("body").removeClass("scroll_stop")
 }
 
@@ -511,3 +512,15 @@ function pay()
   $(".receipt").slideUp("slow");
   $(".paid").slideDown("slow");
 }
+
+
+// Open Email Sequel
+$(".open_email_popup").click(function () {
+  $(".pricing_popup").removeClass("pricing_popup_");
+  $(".email_popup").addClass("email_popup_");
+});
+$(".col5_close").click(function () {
+  $(".fixed_side1").removeClass("fixed_side1_"),
+    $(".email_popup").removeClass("email_popup_");
+    $("body").removeClass("scroll_stop")
+});
