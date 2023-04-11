@@ -12584,9 +12584,9 @@ body.fixed_side1{
 .pricing_popup .pricing_box{
   padding:.8rem;
 }
-.pricing_popup .pricing_middle{
+/* .pricing_popup .pricing_middle{
   height:320px;
-}
+} */
 
 .pricing_box{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -12603,9 +12603,9 @@ body.fixed_side1{
   width:80%;
 }
 @media only screen and (max-width: 1100px) and (min-width: 992px)   {
-  .pricing_popup .pricing_middle{
+  /* .pricing_popup .pricing_middle{
     height:370px;
-  }
+  } */
 }
 @media screen and (max-width: 992px)  {
   .pricing_flex{
