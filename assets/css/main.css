@@ -12636,9 +12636,9 @@ body.fixed_side1 {
   padding: .8rem;
 }
 
-/* .pricing_popup .pricing_middle {
+.pricing_popup .pricing_middle {
   height: 320px;
-} */
+}
 
 .pricing_box {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -12878,9 +12878,9 @@ text-align:center;
 
 
 @media only screen and (max-width: 1100px) and (min-width: 992px) {
-  /* .pricing_popup .pricing_middle {
+  .pricing_popup .pricing_middle {
     height: 370px;
-  } */
+  }
 }
 
 @media screen and (max-width: 992px) {
