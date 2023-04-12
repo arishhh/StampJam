@@ -1,259 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
+
 <body>
-       <!-- Feature Form Popup Starts -->
-       <script>
-        const select = document.getElementById('select1');
-        const options = select.options;
-        for (let i = 1; i < options.length; i++) {
-          options[i].disabled = true;
-        }
-        select.addEventListener('change', function() {
-          for (let i = 1; i < options.length; i++) {
-            options[i].disabled = false;
-          }
-        });
-      </script>
-  <div class="fixed_side1"></div>
-  <div class="requestfeature_popup">
-     <div class="col5_close">
-        <img src="img/close.png" alt="" class="hvr-pop">
-     </div>
-     <section class="submit-request-form">
-       <div class="container">
-           <div class="row justify-content-center">
-               <div class="col-md-9 col-lg-8">
-                   <div class="section-heading text-center mb-5">
-                       <h2>REQUEST A FEATURE</h2>
-                   </div>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-md-12 col-lg-12">
-                   <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form" enctype="multipart/form-data" target="_blank">
-                       <div class="row">
-                           <div class="col-lg-6 col-md-6 col-sm-12">
-                               <div class="form-group">
-                                   <label for="select1">I would like to request a new:</label>
-                                   <select id="select1" class="crumina--select input--squared select2-hidden-accessible form-control" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true" required>
-                                       <option data-display="Domain Registrations" value="">Select an option</option>
-                                       <option value="1">Shape</option>
-                                       <option value="2">Text</option>
-                                       <option value="3">Image</option>
-                                       <option value="4">Template</option>
-                                       <option value="5">Other</option>
-                                   </select>
-                               </div>
-                               <div class="form-group">
-                                   <label for="name">Your Name <span class="required">*</span></label>
-                                   <input id="name" class="form-control" name="name" type="text" placeholder="Your Name" required>
-                               </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-12">
-                               <div class="form-group">
-                                   <label for="submitEmail">Your email <span class="required">*</span></label>
-                                   <input id="submitEmail" class="form-control" name="email" type="email" placeholder="Email Address" required>
-                               </div>
-                               <div class="form-group input-file-wrap">
-                                   <label for="upfile">Attachments</label>
-                                   <span class="upfile-btn">Upload your file</span>
-                                   <input id="upfile" type="file" name="upload" class="form-control"/>
-
-                               </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12">
-                               <div class="form-group">
-                                   <label for="descr">Provide a detailed description <span
-                                           class="required">*</span></label>
-                                   <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?" rows="4" required></textarea>
-                                   <p class="small mt-2">Please enter the details of your request. A member of our
-                                       support staff will respond as soon as possible.</p>
-                               </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                               <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
-                                   Submit Request
-                                </button>
-                           </div>
-                       </div>
-                   </form>
-               </div>
-           </div>
-       </div>
-   </section>
+   <!-- Feature Form Popup Starts -->
    <script>
-       document.addEventListener("DOMContentLoaded", function() {
- const select = document.getElementById('select1');
- const nameInput = document.getElementById('name');
- const emailInput = document.getElementById('submitEmail');
- const fileInput = document.getElementById('upfile');
- const descrInput = document.getElementById('descr');
- const options = select.options;
- nameInput.setAttribute('disabled', true);
- emailInput.setAttribute('disabled', true);
- fileInput.setAttribute('disabled', true);
- descrInput.setAttribute('disabled', true);
- select.addEventListener('change', function() {
-   if (select.value === '') {
-     nameInput.setAttribute('disabled', true);
-     emailInput.setAttribute('disabled', true);
-     fileInput.setAttribute('disabled', true);
-     descrInput.setAttribute('disabled', true);
-     for (let i = 1; i < options.length; i++) {
-     }
-   } else {
-     nameInput.removeAttribute('disabled');
-     emailInput.removeAttribute('disabled');
-     fileInput.removeAttribute('disabled');
-     descrInput.removeAttribute('disabled');
-   }
-   if (select.value === '') {
-     nameInput.setAttribute('disabled', true);
-     emailInput.setAttribute('disabled', true);
-     fileInput.setAttribute('disabled', true);
-     descrInput.setAttribute('disabled', true);
-   }
- });
-});
-
-
-
-  </script>
-  </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-   const select = document.getElementById('select1');
-   const nameInput = document.getElementById('name');
-   const emailInput = document.getElementById('submitEmail');
-   const fileInput = document.getElementById('upfile');
-   const descrInput = document.getElementById('descr');
-   const options = select.options;
-   nameInput.setAttribute('disabled', true);
-   emailInput.setAttribute('disabled', true);
-   fileInput.setAttribute('disabled', true);
-   descrInput.setAttribute('disabled', true);
-   select.addEventListener('change', function () {
-      if (select.value === '') {
-         nameInput.setAttribute('disabled', true);
-         emailInput.setAttribute('disabled', true);
-         fileInput.setAttribute('disabled', true);
-         descrInput.setAttribute('disabled', true);
+      const select = document.getElementById('select1');
+      const options = select.options;
+      for (let i = 1; i < options.length; i++) {
+         options[i].disabled = true;
+      }
+      select.addEventListener('change', function () {
          for (let i = 1; i < options.length; i++) {
+            options[i].disabled = false;
          }
-      } else {
-         nameInput.removeAttribute('disabled');
-         emailInput.removeAttribute('disabled');
-         fileInput.removeAttribute('disabled');
-         descrInput.removeAttribute('disabled');
-      }
-      if (select.value === '') {
-         nameInput.setAttribute('disabled', true);
-         emailInput.setAttribute('disabled', true);
-         fileInput.setAttribute('disabled', true);
-         descrInput.setAttribute('disabled', true);
-      }
-   });
-});
-
-</script>
-  <!-- Feature Form Popup Ends -->
-
-
-
-  <!-- Feedback form Popup Starts -->
-
-  <section class="submit-request-form">
-   <div class="container">
-      <div class="row justify-content-center">
-         <div class="col-md-9 col-lg-8">
-            <div class="section-heading text-center">
-               <h2>Submit Feedback</h2>
+      });
+   </script>
+   <div class="fixed_side1"></div>
+   <div class="requestfeature_popup">
+      <div class="col5_close">
+         <img src="img/close.png" alt="" class="hvr-pop">
+      </div>
+      <section class="submit-request-form">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-md-9 col-lg-8">
+                  <div class="section-heading text-center mb-5">
+                     <h2>REQUEST A FEATURE</h2>
+                  </div>
+               </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-md-12 col-lg-12">
-               <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
-                  enctype="multipart/form-data" target="_blank">
-                  <div class="row">
-                     
-                     <div class="col-md-12 col-lg-12">
-                        <div id="full-stars-example-two">
-                           <div class="rating-group">
-                              <input disabled checked class="rating__input rating__input--none" name="rating"
-                                 id="rating3-none" value="0" type="radio">
-      
-                              <label aria-label="1 star" class="rating__label" for="rating3-1"><i
-                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-1" value="1" type="radio" required>
-      
-                              <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
-                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-2" value="2" type="radio">
-      
-                              <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
-                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-3" value="3" type="radio">
-      
-                              <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
-                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-4" value="4" type="radio">
-      
-                              <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
-                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-5" value="5" type="radio">
+            <div class="row">
+               <div class="col-md-12 col-lg-12">
+                  <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
+                     enctype="multipart/form-data" target="_blank">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="select1">I would like to request a new:</label>
+                              <select id="select1"
+                                 class="crumina--select input--squared select2-hidden-accessible form-control"
+                                 data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true" required>
+                                 <option data-display="Domain Registrations" value="">Select an option</option>
+                                 <option value="1">Shape</option>
+                                 <option value="2">Text</option>
+                                 <option value="3">Image</option>
+                                 <option value="4">Template</option>
+                                 <option value="5">Other</option>
+                              </select>
+                           </div>
+                           <div class="form-group">
+                              <label for="name">Your Name <span class="required">*</span></label>
+                              <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
+                                 required>
                            </div>
                         </div>
-                     </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="submitEmail">Your email <span class="required">*</span></label>
+                              <input id="submitEmail" class="form-control" name="email" type="email"
+                                 placeholder="Email Address" required>
+                           </div>
+                           <div class="form-group input-file-wrap">
+                              <label for="upfile">Attachments</label>
+                              <span class="upfile-btn">Upload your file</span>
+                              <input id="upfile" type="file" name="upload" class="form-control" />
 
-                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="form-group">
-                           <label for="name">Your Name <span class="required">*</span></label>
-                           <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
-                              required>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                           <div class="form-group">
+                              <label for="descr">Provide a detailed description <span class="required">*</span></label>
+                              <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?"
+                                 rows="4" required></textarea>
+                              <p class="small mt-2">Please enter the details of your request. A member of our
+                                 support staff will respond as soon as possible.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                           <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
+                              Submit Request
+                           </button>
                         </div>
                      </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="form-group">
-                           <label for="submitEmail">Your email <span class="required">*</span></label>
-                           <input id="submitEmail" class="form-control" name="email" type="email"
-                              placeholder="Email Address" required>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const select = document.getElementById('select1');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('submitEmail');
+            const fileInput = document.getElementById('upfile');
+            const descrInput = document.getElementById('descr');
+            const options = select.options;
+            nameInput.setAttribute('disabled', true);
+            emailInput.setAttribute('disabled', true);
+            fileInput.setAttribute('disabled', true);
+            descrInput.setAttribute('disabled', true);
+            select.addEventListener('change', function () {
+               if (select.value === '') {
+                  nameInput.setAttribute('disabled', true);
+                  emailInput.setAttribute('disabled', true);
+                  fileInput.setAttribute('disabled', true);
+                  descrInput.setAttribute('disabled', true);
+                  for (let i = 1; i < options.length; i++) {
+                  }
+               } else {
+                  nameInput.removeAttribute('disabled');
+                  emailInput.removeAttribute('disabled');
+                  fileInput.removeAttribute('disabled');
+                  descrInput.removeAttribute('disabled');
+               }
+               if (select.value === '') {
+                  nameInput.setAttribute('disabled', true);
+                  emailInput.setAttribute('disabled', true);
+                  fileInput.setAttribute('disabled', true);
+                  descrInput.setAttribute('disabled', true);
+               }
+            });
+         });
+
+
+
+      </script>
+   </div>
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const select = document.getElementById('select1');
+         const nameInput = document.getElementById('name');
+         const emailInput = document.getElementById('submitEmail');
+         const fileInput = document.getElementById('upfile');
+         const descrInput = document.getElementById('descr');
+         const options = select.options;
+         nameInput.setAttribute('disabled', true);
+         emailInput.setAttribute('disabled', true);
+         fileInput.setAttribute('disabled', true);
+         descrInput.setAttribute('disabled', true);
+         select.addEventListener('change', function () {
+            if (select.value === '') {
+               nameInput.setAttribute('disabled', true);
+               emailInput.setAttribute('disabled', true);
+               fileInput.setAttribute('disabled', true);
+               descrInput.setAttribute('disabled', true);
+               for (let i = 1; i < options.length; i++) {
+               }
+            } else {
+               nameInput.removeAttribute('disabled');
+               emailInput.removeAttribute('disabled');
+               fileInput.removeAttribute('disabled');
+               descrInput.removeAttribute('disabled');
+            }
+            if (select.value === '') {
+               nameInput.setAttribute('disabled', true);
+               emailInput.setAttribute('disabled', true);
+               fileInput.setAttribute('disabled', true);
+               descrInput.setAttribute('disabled', true);
+            }
+         });
+      });
+
+   </script>
+   <!-- Feature Form Popup Ends -->
+
+
+
+   <!-- Feedback form Popup Starts -->
+   <div class="submit-request-form feedback_popup">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-8">
+               <div class="section-heading text-center">
+                  <h2>Submit Feedback</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 col-lg-12">
+                  <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
+                     enctype="multipart/form-data" target="_blank">
+                     <div class="row">
+
+                        <div class="col-md-12 col-lg-12">
+                           <div id="full-stars-example-two">
+                              <div class="rating-group">
+                                 <input disabled checked class="rating__input rating__input--none" name="rating"
+                                    id="rating3-none" value="0" type="radio">
+
+                                 <label aria-label="1 star" class="rating__label" for="rating3-1"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-1" value="1" type="radio"
+                                    required>
+
+                                 <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-2" value="2" type="radio">
+
+                                 <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-3" value="3" type="radio">
+
+                                 <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-4" value="4" type="radio">
+
+                                 <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-5" value="5" type="radio">
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="name">Your Name <span class="required">*</span></label>
+                              <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
+                                 required>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="submitEmail">Your email <span class="required">*</span></label>
+                              <input id="submitEmail" class="form-control" name="email" type="email"
+                                 placeholder="Email Address" required>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                           <div class="form-group">
+                              <label for="descr">Provide a detailed description <span class="required">*</span></label>
+                              <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?"
+                                 rows="4" required></textarea>
+                              <p class="small mt-2">Please enter the details of your request. A member of our
+                                 support staff will respond as soon as possible.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                           <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
+                              Submit Feedback
+                           </button>
                         </div>
                      </div>
-                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="form-group">
-                           <label for="descr">Provide a detailed description <span
-                                 class="required">*</span></label>
-                           <textarea id="descr" class="form-control" name="desc"
-                              placeholder="How can we help you?" rows="4" required></textarea>
-                           <p class="small mt-2">Please enter the details of your request. A member of our
-                              support staff will respond as soon as possible.</p>
-                        </div>
-                     </div>
-                     <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                        <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
-                           Submit Feedback
-                        </button>
-                     </div>
-                  </div>
-               </form>
+                  </form>
+               </div>
             </div>
          </div>
       </div>
-</section>
-
-
-
-
-
-
-  <!-- Feedback form Popup Ends -->
+   </div>
+   <!-- Feedback form Popup Ends -->
 
 
 
@@ -261,210 +262,212 @@
 
 
 
-  <!-- Backup of Pricing Popup -->
+   <!-- Backup of Pricing Popup -->
 
-  <div class="fixed_side1"></div>
-  <div class="pricing_popup" id="popup">
-     <div class="col5_close">
-        <img src="img/close.png" alt="" class="hvr-pop">
-     </div>
-     <div class="pricing_flex">
-       <!-- Basic Pricing -->
-       <div class="pricing_box pricing_box1">
-          <!-- Card Top Section -->
-          <div class="pricing_top">
-             <div class="badge">BASIC</div>
-             <div class="pricing_type">
-                <h1>Gold</h1>
-             </div>
-          </div>
-
-          <!-- Card Middle Section -->
-          <div class="pricing_middle">
-             <ul>
-                <li>
-                   <h4>For digital documents</h4>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>Format - <b class="font-weight-bolder">PNG</b></p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p><b class="font-weight-bolder">PNG </b>is a bitmap format.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>The image has a transparent background and a high resolution.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>Ideal fore-documents.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>In this option, you can apply a filter with a
-                      worn effect.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>This will give your stamp a vintage look.</p>
-                </li>
-             </ul>
-          </div>
-
-          <!-- Card Bottom Section -->
-          <div class="pricing_bottom">
-             <div class="pprice">
-                <h6>$2.49 <span>+GST</span></h6>
-             </div>
-             <div class="pricing_btn">
-                <a class="btn primary-solid-btn animated-btn" href="#" target="_blank">
-                   Get Started <span class="fas fa-long-arrow-alt-right"></span>
-                </a>
-             </div>
-          </div>
-       </div>
-
-       <!-- Most Popular Pricing -->
-       <div class="pricing_box pricing_box1 popular-price">
-          <!-- Card Top Section -->
-          <div class="pricing_top">
-             <div class="badge">MOST POPULAR</div>
-             <div class="pricing_type">
-                <h1>Platinum</h1>
-             </div>
-          </div>
-
-          <!-- Card Middle Section -->
-          <div class="pricing_middle">
-             <ul>
-                <li>
-                   <h4>For making a rubber stamp</h4>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>Format - <b class="font-weight-bolder">PDF</b>, <b class="font-weight-bolder">SVG</b>, <b class="font-weight-bolder">EPS</b>, <b class="font-weight-bolder">PNG</b></p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>This option includes a set of different high quality formats.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p><b class="font-weight-bolder">SVG</b> is a vector format.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p><b class="font-weight-bolder">SVG</b> vector graphics format allows you to
-                      Scale the finished layout to any size, as
-                      this format is not bypassed in the
-                      manufacture of printing by engraving;</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p><b class="font-weight-bolder">PDF,</b> a well-known portable document
-                      format.</p>
-                </li>
-                <li>
-                   <span class="fa-regular fa-check"></span>
-                   <p>This format is supported by all devices, as
-                      well as most programs.</p>
-                </li>
-             </ul>
-          </div>
-
-          <!-- Card Bottom Section -->
-          <div class="pricing_bottom">
-             <div class="pprice">
-                <h6>$2.99 <span>+GST</span></h6>
-             </div>
-             <div class="pricing_btn">
-                <a class="btn primary-solid-btn animated-btn" href="#" target="_blank">
-                   Get Started <span class="fas fa-long-arrow-alt-right"></span>
-                </a>
-             </div>
-          </div>
-       </div>
-    </div>
-  </div>
-
-  <!-- Backup of Pricing Popup Ends -->
-
-
-
-
-
-  <!-- Thank popup here -->
-
-  <div class="thankyou_container">
-   <div class="container_reciept">
-      <div class="tab"></div>
-      <div class="paid">
-         <p>Receipt Paid successfully</p>
+   <div class="fixed_side1"></div>
+   <div class="pricing_popup" id="popup">
+      <div class="col5_close">
+         <img src="img/close.png" alt="" class="hvr-pop">
       </div>
-      <div class="receipt">
-         <div class="paper">
-            <div class="title">Receipt</div>
-            <div class="date">Date:09/04/2023</div>
-            <table>
-               <tbody>
-                  <tr>
-                     <td>1x Premium</td>
-                     <td class="right">$2.99</td>
-                  </tr>
-                  <tr>
-                     <td>1x Gold</td>
-                     <td class="right">$2.49</td>
-                  </tr>
-               </tbody>
-            </table>
-            <div class="sign center">
+      <div class="pricing_flex">
+         <!-- Basic Pricing -->
+         <div class="pricing_box pricing_box1">
+            <!-- Card Top Section -->
+            <div class="pricing_top">
+               <div class="badge">BASIC</div>
+               <div class="pricing_type">
+                  <h1>Gold</h1>
+               </div>
+            </div>
+
+            <!-- Card Middle Section -->
+            <div class="pricing_middle">
+               <ul>
+                  <li>
+                     <h4>For digital documents</h4>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Format - <b class="font-weight-bolder">PNG</b></p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p><b class="font-weight-bolder">PNG </b>is a bitmap format.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>The image has a transparent background and a high resolution.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Ideal fore-documents.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>In this option, you can apply a filter with a
+                        worn effect.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>This will give your stamp a vintage look.</p>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Card Bottom Section -->
+            <div class="pricing_bottom">
+               <div class="pprice">
+                  <h6>$2.49 <span>+GST</span></h6>
+               </div>
+               <div class="pricing_btn">
+                  <a class="btn primary-solid-btn animated-btn" href="#" target="_blank">
+                     Get Started <span class="fas fa-long-arrow-alt-right"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Most Popular Pricing -->
+         <div class="pricing_box pricing_box1 popular-price">
+            <!-- Card Top Section -->
+            <div class="pricing_top">
+               <div class="badge">MOST POPULAR</div>
+               <div class="pricing_type">
+                  <h1>Platinum</h1>
+               </div>
+            </div>
+
+            <!-- Card Middle Section -->
+            <div class="pricing_middle">
+               <ul>
+                  <li>
+                     <h4>For making a rubber stamp</h4>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Format - <b class="font-weight-bolder">PDF</b>, <b class="font-weight-bolder">SVG</b>, <b
+                           class="font-weight-bolder">EPS</b>, <b class="font-weight-bolder">PNG</b></p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>This option includes a set of different high quality formats.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p><b class="font-weight-bolder">SVG</b> is a vector format.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p><b class="font-weight-bolder">SVG</b> vector graphics format allows you to
+                        Scale the finished layout to any size, as
+                        this format is not bypassed in the
+                        manufacture of printing by engraving;</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p><b class="font-weight-bolder">PDF,</b> a well-known portable document
+                        format.</p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>This format is supported by all devices, as
+                        well as most programs.</p>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Card Bottom Section -->
+            <div class="pricing_bottom">
+               <div class="pprice">
+                  <h6>$2.99 <span>+GST</span></h6>
+               </div>
+               <div class="pricing_btn">
+                  <a class="btn primary-solid-btn animated-btn" href="#" target="_blank">
+                     Get Started <span class="fas fa-long-arrow-alt-right"></span>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
-      <div>
-      </div>
    </div>
 
-   <div class="center center_heading">
-      <h1 class="text-black">
-         <div class="glowtext">
-            <span>T</span>
-            <span>H</span>
-            <span>A</span>
-            <span>N</span>
-            <span>K</span>
-            <span> </span>
-            <span>Y</span>
-            <span>O</span>
-            <span>U</span>
+   <!-- Backup of Pricing Popup Ends -->
+
+
+
+
+
+   <!-- Thank popup here -->
+
+   <div class="thankyou_container">
+      <div class="container_reciept">
+         <div class="tab"></div>
+         <div class="paid">
+            <p>Receipt Paid successfully</p>
          </div>
-      </h1>
+         <div class="receipt">
+            <div class="paper">
+               <div class="title">Receipt</div>
+               <div class="date">Date:09/04/2023</div>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td>1x Premium</td>
+                        <td class="right">$2.99</td>
+                     </tr>
+                     <tr>
+                        <td>1x Gold</td>
+                        <td class="right">$2.49</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div class="sign center">
+               </div>
+            </div>
+         </div>
+         <div>
+         </div>
+      </div>
+
+      <div class="center center_heading">
+         <h1 class="text-black">
+            <div class="glowtext">
+               <span>T</span>
+               <span>H</span>
+               <span>A</span>
+               <span>N</span>
+               <span>K</span>
+               <span> </span>
+               <span>Y</span>
+               <span>O</span>
+               <span>U</span>
+            </div>
+         </h1>
+      </div>
+
+      <div class="area">
+         <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+
+      <!-- Start your coding from here -->
    </div>
 
-   <div class="area">
-      <ul class="circles">
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-      </ul>
-   </div>
-
-   <!-- Start your coding from here -->
-</div>
 
 
 
 
-
-  <!-- Thank popup here ends -->
+   <!-- Thank popup here ends -->
 </body>
+
 </html>

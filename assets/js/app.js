@@ -40,7 +40,7 @@ $(".close").click(function () {
 
 
 // Feature Request Alert
-$("#pricing_open").click(function () {
+$("#feature_open").click(function () {
   $(".fixed_side1").addClass("fixed_side1_");
   $(".requestfeature_popup").addClass("requestfeature_popup_");
   $("body").addClass("scroll_stop")
@@ -48,6 +48,22 @@ $("#pricing_open").click(function () {
 $(".col5_close").click(function () {
   $(".fixed_side1").removeClass("fixed_side1_"),
     $(".requestfeature_popup").removeClass("requestfeature_popup_");
+    $("body").removeClass("scroll_stop")
+});
+
+$(".close").click(function () {
+  $(".alert").css("display", "none");
+});
+
+// Feedback Request Alert
+$("#feedback_open").click(function () {
+  $(".fixed_side1").addClass("fixed_side1_");
+  $(".feedback_popup").addClass("feedback_popup_");
+  $("body").addClass("scroll_stop")
+});
+$(".col5_close").click(function () {
+  $(".fixed_side1").removeClass("fixed_side1_"),
+    $(".feedback_popup").removeClass("feedback_popup_");
     $("body").removeClass("scroll_stop")
 });
 
@@ -524,3 +540,19 @@ $(".col5_close").click(function () {
     $(".email_popup").removeClass("email_popup_");
     $("body").removeClass("scroll_stop")
 });
+
+// goBack Function
+// Function to go back to the previous popup
+function goBack() {
+  // Hide the current popup
+  var currentPopup = $('.email_popup');
+  currentPopup.removeClass('email_popup_');
+  // Show the previous popup, if there is one
+  var prevPopup = currentPopup.prev('.pricing_popup');
+  if (prevPopup.length > 0) {
+    prevPopup.addClass('pricing_popup_');
+  }
+}
+
+// Attach event listener to the back button
+$('#goBack').click(goBack);

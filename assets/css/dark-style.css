@@ -9729,6 +9729,7 @@ a.view-details-link:hover span {
   display: block;
   width: 100%;
   overflow: hidden;
+  max-height: 350px;
 }
 
 /* line 3449, src/assets/scss/custom/_style.scss */
@@ -11051,7 +11052,7 @@ button.scroll-top:focus {
   padding: 175px 0;
 }
 .ptb-135 {
-  padding: 135px 0;
+  padding: 150px 0;
 }   
 
 .no_flex {
@@ -12009,12 +12010,41 @@ body.fixed_side1{
   /* transform: scale(0) translateY(-50%); */
   transition: 0.5s;
   height: 100%;
-  max-height: 100vh;
+  max-height: 97vh;
   overflow-y: auto; 
   border-radius: 15px;
   border: 1px solid #2967e6;
   padding-top: 2.5rem;
 }
+
+.feedback_popup{
+  position: fixed;
+  left: 0%;
+  right: -200%;
+  width: 90%;
+  margin: 0 auto;
+  /* top: 15%; */
+  z-index: 9999;
+  padding: 20px 25px 25px;
+  background: #fff;
+  border-top: 5px solid var(--color-secondary);
+  /* transform: scale(0) translateY(-50%); */
+  transition: 0.5s;
+  height: 100%;
+  max-height: 97vh;
+  overflow-y: auto; 
+  border-radius: 15px;
+  border: 1px solid #2967e6;
+  padding-top: 2.5rem;
+}
+
+.feedback_popup_ {
+  right: 0;
+}
+
+
+
+
 /* Email Popup CSS Starts */
 .email_popup {
   position: fixed;
@@ -12045,7 +12075,6 @@ body.fixed_side1{
   text-align: center;
   color: #000;
 }
-
 .newleter-content label{
   text-align: center;
   color: #000;
@@ -12248,6 +12277,9 @@ body.fixed_side1{
   .ptb-175{
     padding: 115px 0;
   }
+  .ptb-135{
+    padding: 115px 0;
+  }
 
   .product-slide.slide-1,
   .product-slide.slide-2,
@@ -12344,7 +12376,7 @@ body.fixed_side1{
 
 @media only screen and (max-width: 400px) {
   .hero-content-wrap h1 {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   .ptb-100 {
@@ -12580,7 +12612,8 @@ body.fixed_side1{
   margin-bottom:10px;
 }
 .pricing_popup .pricing_box{
-  /* max-height: 630px; */
+  max-height: 570px;
+  height: 570px;
 }
 .pricing_popup .pricing_box{
   padding:.8rem;

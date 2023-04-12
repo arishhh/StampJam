@@ -684,9 +684,39 @@ pre code {
 }
 
 /* Email Popup Inner CSS Here */
+.secondary-solid-btn{
+  border-radius: 100px !important;
+  background: #61676d !important;
+  border: 1px solid #61676d !important;
+  margin-right: 10px;
+}
+.secondary-solid-btn:hover{
+  background: transparent !important;
+  color: #61676d !important;
+}
 
+.single-service-plane{
+  cursor: pointer;
+}
+.single-service-plane:hover .btn_onhover{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 
+.single-service-plane .action-wrap{
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+} 
 
+@media (max-width: 400px) {
+  .btn_onhover{
+    font-size:12px !important;
+    padding: 0.1rem 0.35rem;
+  }
+}
 @media (min-width: 576px) {
 
   /* line 6, src/assets/scss/vendors/bootstrap.min.css */
