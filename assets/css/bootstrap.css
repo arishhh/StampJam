@@ -715,6 +715,20 @@ pre code {
   transform: translateX(-50%);
 } 
 
+.single_template img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.single_template .action-wrap{
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+
+
 @media (max-width: 400px) {
   .btn_onhover{
     font-size:12px !important;
