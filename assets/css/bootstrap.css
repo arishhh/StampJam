@@ -718,15 +718,21 @@ pre code {
 .single_template img{
   width: 100%;
   object-fit: contain;
+  height: 100%;
 }
-
-.single_template .action-wrap{
-  position: absolute;
+.tab-pane .col-lg-4 {
+  position: relative;
+}
+.tab-pane .col-lg-4  .action-wrap{
+  position: relative;
   width: 100%;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
 } 
+
+.tab-pane .col-lg-4:hover .primary-solid{
+  opacity: 1;
+  visibility: visible;
+}
 
 
 @media (max-width: 400px) {
