@@ -1,0 +1,4 @@
+.pricing_popup > addClass .pricing_popup_ = For pricing popup, target the div ('.pricing_popup'); btn-div id that triggers the popup('#pricing_open')
+.requestfeature_popup > addClass requestfeature_popup_ = For feature request popup, target the div ('.requestfeature_popup'); btn-div id that triggers the popup('#feature_open')
+.email_popup > addClass email_popup_ = For email popup, target the div ('.email_popup'); btn-div class that triggers the popup('.open_email_popup')
+.feedback_popup > addClass feedback_popup_ = For feedback popup, target the div ('.feedback_popup'); btn-div id that triggers the popup('#feedback_open')
