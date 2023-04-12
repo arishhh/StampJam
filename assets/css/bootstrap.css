@@ -702,6 +702,10 @@ pre code {
   opacity: 1 !important;
   visibility: visible !important;
 }
+.btn_onhover{
+  font-size: 13px !important;
+  padding: .1rem .45rem !important;
+}
 
 .single-service-plane .action-wrap{
   position: absolute;
@@ -714,7 +718,7 @@ pre code {
 @media (max-width: 400px) {
   .btn_onhover{
     font-size:12px !important;
-    padding: 0.1rem 0.35rem;
+    padding: 0.1rem 0.25rem !important;
   }
 }
 @media (min-width: 576px) {

@@ -28,7 +28,7 @@ body {
 }
 .container {
   max-width: 800px;
-  margin: 60px auto;
+  margin: 0 auto;
   text-align: center;
   padding: 0 20px;
 }
@@ -95,9 +95,7 @@ a.download{
     cursor: pointer;
     margin: 0 7px 0 0;
     border-radius: 20px;
-    color: yellow;
-    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-    animation: glow 5s linear infinite;
+    color: #004bc3;
   }
   
   .container h1 {
@@ -105,8 +103,15 @@ a.download{
     font-size: 78px;
   }
 
+  .innerFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
 
-  @keyframes glow {
+  /* @keyframes glow {
     0% {
       filter: hue-rotate(0deg);
     }
@@ -114,7 +119,7 @@ a.download{
     100% {
       filter: hue-rotate(360deg);
     }
-  }
+  } */
 
 a.social_icon{
     transition: all 0.3s;
@@ -129,6 +134,7 @@ a.download:hover{
 
 .social-links {
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .social-links a {
@@ -247,7 +253,7 @@ button:hover {
 
 /* Shapes CSS Starts Here */
 
-.circles {
+/* .circles {
     position: absolute;
     margin: 0;
     top: 0;
@@ -266,14 +272,11 @@ button:hover {
     height: 20px;
     background: #0056b3;
     animation: animate 25s linear infinite;
-    /* animation: glow 25s linear infinite; */
     top: -150px;
   }
   
   .single-service-plane {
     background: #e7faff;
-    /* height: 235px;
-    max-height: 250px; */
     margin: 15px 0;
   }
   
@@ -383,4 +386,4 @@ button:hover {
       opacity: 0;
       border-radius: 50%;
     }
-  }
+  } */
