@@ -735,6 +735,12 @@ pre code {
 }
 
 
+@media (max-width: 768px) {
+  .tab-pane .col-lg-4 .primary-solid{
+    opacity: 1;
+    visibility: visible;
+  }
+}
 @media (max-width: 400px) {
   .btn_onhover{
     font-size:12px !important;
