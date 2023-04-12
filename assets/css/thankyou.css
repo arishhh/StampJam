@@ -203,9 +203,10 @@ button:hover {
     -webkit-text-stroke: 1px black;
     font-size: 4.5rem;
   }
-  .social-links {
-    margin-bottom: 5rem;
+  .innerFlex{
+    max-height: 70vh;
   }
+ 
 }
 
 @media screen and (max-width: 480px) {
