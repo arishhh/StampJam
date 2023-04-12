@@ -344,6 +344,10 @@ button::-moz-focus-inner {
   border-style: none;
 }
 
+.nav-item.active{
+  color: #00faaf;
+}
+
 /* line 6, src/assets/scss/vendors/bootstrap.min.css */
 input[type=checkbox],
 input[type=radio] {
@@ -678,6 +682,10 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* Email Popup Inner CSS Here */
+
+
 
 @media (min-width: 576px) {
 
@@ -14145,7 +14153,7 @@ a.text-dark:hover {
   .table-dark {
     color: inherit;
   }
-
+  
   /* line 6, src/assets/scss/vendors/bootstrap.min.css */
   .table-dark tbody+tbody,
   .table-dark td,
@@ -14176,6 +14184,9 @@ a.text-dark:hover {
   overflow: hidden;
 }
 
+.our-services .col-sm-6{
+  width: 48% !important;
+}
 
 .color-6-bg {
   background: rgb(16 5 31/ 55%) !important;
