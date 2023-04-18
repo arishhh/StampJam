@@ -172,7 +172,7 @@
                the download link right away! Join our email list to stay up-to-date with our latest offers and
                updates.</label>
             <div id="frm_subscribe">
-               <form name="subscribe" id="subscribe_popup" action="thankyou.html">
+               <form name="subscribe" id="subscribe_popup">
                   <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
                      <div class="form-group">
                         <input id="sendEmail" class="form-control" name="email" type="email"
@@ -198,6 +198,101 @@
       </div>
    </div>
    <!-- Email Popup Ends -->
+
+   <!-- Payment Popup Starts -->
+   <div class="payment_popup">
+      <div class="col5_close">
+         <img src="img/close.png" alt="" class="hvr-pop">
+      </div>
+      
+      <div class="back_btn">
+         <i class="fa-solid fa-circle-arrow-left" id="payment_goBack"></i>
+      </div>
+      <div class="innerFlex_2">
+         <div class="flexLeft">
+           <div class="selected_package popular_pricing">
+            <div class="badge">Platinum</div>
+            <div class="price"><h1>US$2.99</h1></div>
+           </div>
+
+           <div class="payment_method_icons">
+               <div class="payment_img">
+                  <img src="img/mastercard.png" alt="">
+               </div>
+               <div class="payment_img">
+                  <img src="img/visa.png" alt="">
+               </div>
+               <div class="payment_img">
+                  <img src="img/american_express.png" alt="">
+               </div>
+               <div class="payment_img">
+                  <img src="img/paypal.png" alt="">
+               </div>
+           </div>
+         </div>
+         <div class="flexRight">
+            <div class="container">
+               <div class="row">
+                   <div class="col-xs-12 col-md-12">
+                       <div class="panel panel-default">
+                           <div class="panel-heading">
+                               <h3 class="panel-title">
+                                   Payment Details
+                               </h3>
+                               <div class="checkbox pull-right">
+                                   <label>
+                                       <input type="checkbox" />
+                                       Remember
+                                   </label>
+                               </div>
+                           </div>
+                           <div class="panel-body">
+                               <form role="form">
+                               <div class="form-group">
+                                   <label for="cardNumber">
+                                       CARD NUMBER</label>
+                                   <div class="input-group">
+                                       <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                           required autofocus />
+                                       <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-7 col-md-7">
+                                       <div class="form-group">
+                                           <label for="expityMonth">
+                                               EXPIRY DATE</label>
+                                           <div class="col-xs-6 col-lg-6 pl-ziro">
+                                               <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                           </div>
+                                           <div class="col-xs-6 col-lg-6 pl-ziro">
+                                               <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                                       </div>
+                                   </div>
+                                   <div class="col-xs-5 col-md-5 pull-right">
+                                       <div class="form-group">
+                                           <label for="cvCode">
+                                               CV CODE</label>
+                                           <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                       </div>
+                                   </div>
+                               </div>
+                               </form>
+                           </div>
+                       </div>
+                       <ul class="nav nav-pills nav-stacked">
+                           <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                           </li>
+                       </ul>
+                       <br/>
+                       <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+                   </div>
+               </div>
+           </div>
+         </div>
+      </div>
+   </div>
+   <!-- Payment Popup Ends -->
 
    <!-- Feature Form Popup Starts -->
    <script>

@@ -12061,6 +12061,95 @@ body.fixed_side1 {
   left: 0;
 }
 
+
+/* Stripe Popup */
+.payment_popup {
+  position: fixed;
+  left: 0%;
+  right: -200%;
+  width: 50%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  padding: 20px 10px 10px;
+  background: #fff;
+  border-top: 5px solid var(--color-secondary);
+  /* transform: scale(0) translateY(-50%); */
+  transition: 0.5s;
+  height: 70vh;
+  max-height: 100%;
+  margin:auto;
+  overflow-y: hidden;
+  border-radius: 15px;
+  border: 1px solid #2967e6;
+  /* padding-top: 2.5rem; */
+}
+.payment_popup_ {
+  right: 0;
+}
+.payment_popup .innerFlex_2{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  height: inherit;
+}
+.payment_popup .innerFlex_2 .flexLeft{
+  width: 50%;
+  position: relative;
+  padding: 10px;
+}
+.payment_popup .innerFlex_2 .flexRight{
+  width: 50%;
+  position: relative;
+  padding: 10px;
+  border-left: 1px solid #cacaca;
+
+}
+.payment_popup .back_btn i{
+  font-size: 1.2rem;
+}
+.payment_popup .selected_package{
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: .3rem;
+  margin-top:15px;
+  margin-bottom:25px;
+}
+.payment_popup .selected_package .price{
+  margin-top:10px;
+}
+
+.payment_popup .payment_method_icons{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.payment_popup .payment_img{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.payment_popup .payment_img img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+.payment_popup .popular_pricing{
+    border: 1px solid #6a3cc1;
+    border-top: 5px solid #6a3cc1;
+}
+/* Stripe popup ends */
+
 @media (max-width:1125px) {
   .email_popup{
     width:60% !important;
@@ -12131,6 +12220,21 @@ body.fixed_side1 {
   right: 2%;
   top: 8px;
 }
+.back_btn {
+  position: absolute;
+  left: 1%;
+  top: 5px;
+  width: 22px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.back_btn {
+  position: absolute;
+  left: 2%;
+  top: 8px;
+}
+
 
 .hvr-pop {
   display: inline-block;
