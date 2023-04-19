@@ -5976,7 +5976,7 @@ select.form-control.has-value {
   max-width: 1800px;
   /* display: block; */
   width: 100%;
-  z-index: 15;
+  z-index: 100;
   top: 2%;
   margin: 0 auto !important;
 }

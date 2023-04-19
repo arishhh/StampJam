@@ -5896,7 +5896,7 @@ select.form-control.has-value {
   max-width: 1800px;
   /* display: block; */
   width: 100%;
-  z-index: 15;
+  z-index: 100;
   top: 2%;
   margin: 0 auto !important;
 }
@@ -12080,7 +12080,7 @@ body.fixed_side1 {
   height: 70vh;
   max-height: 100%;
   margin:auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   border-radius: 15px;
   border: 1px solid #2967e6;
   /* padding-top: 2.5rem; */
@@ -12117,6 +12117,14 @@ body.fixed_side1 {
   padding: .3rem;
   margin-top:15px;
   margin-bottom:5px;
+}
+.payment_popup .selected_package .price{
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.payment_popup .selected_package .price {
+  color: #0d1536;
 }
 .payment_popup .selected_package ul li p{
   margin-bottom:5px;
@@ -12157,7 +12165,24 @@ body.fixed_side1 {
 .payment_popup .payment_img{
   position: relative;
   width: 50px;
-  height: 50px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.payment_popup .payment_img.visa{
+  background-image: url(../../img/visa.svg);
+}
+.payment_popup .payment_img.mastercard{
+  background-image: url(../../img/mastercard.svg);
+}
+.payment_popup .payment_img.applepay{
+  background-image: url(../../img/applepay-b.svg);
+}
+.payment_popup .payment_img.paypal{
+  background-image: url(../../img/PayPal_logo.svg);
+}
+.payment_popup .payment_img.union{
+  background-image: url(../../img/union_pay.png);
 }
 .payment_popup .payment_img img{
   width: 100%;
@@ -12171,20 +12196,31 @@ body.fixed_side1 {
 /* Stripe popup ends */
 
 @media (max-width:1125px) {
-  .email_popup{
+  .email_popup, .payment_popup{
     width:60% !important;
   }
 }
-@media (max-width:930px) {
-  .email_popup{
+@media (max-width:970px) {
+  .email_popup, .payment_popup{
     width:70% !important;
   }
   .newletter-title h2{
     font-size: 1.6rem;
   }
+  .payment_popup .innerFlex_2{
+    flex-direction: column-reverse;
+    height: unset;
+  }
+  .payment_popup .innerFlex_2 .flexLeft, .payment_popup .innerFlex_2 .flexRight{
+    width: 100%;
+  }
+  .payment_popup .innerFlex_2 .flexRight{
+    border-left: none;
+    border-bottom: 1px solid #cacaca;
+  }
 }
 @media (max-width:670px) {
-  .email_popup{
+  .email_popup, .payment_popup{
     width:80% !important;
   }
   .newleter-content label{
@@ -12201,9 +12237,12 @@ body.fixed_side1 {
     height: 60vh;
     padding: .5rem;
     padding: 1.5rem;
-
   }
-  
+  .payment_popup{
+    max-height: 90vh !important;
+    height: 100%;
+    width: 95% !important;
+  }
   .newletter-title h2{
     font-size: 1.2rem;
   }
