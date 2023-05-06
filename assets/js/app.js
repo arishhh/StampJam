@@ -509,6 +509,8 @@ const popup = document.getElementById("popup");
 // Function to close the popup
 function closePopup() {
   $(".fixed_side1").removeClass("fixed_side1_"),
+  $(".pricing_popup").removeClass("pricing_popup_");
+  $(".feedback_popup").removeClass("feedback_popup_");
   $(".requestfeature_popup").removeClass("requestfeature_popup_");
   $(".email_popup").removeClass("email_popup_");
   $("body").removeClass("scroll_stop")
