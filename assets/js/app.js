@@ -559,16 +559,6 @@ function goBack() {
 // Attach event listener to the back button
 $('#goBack').click(goBack);
 
-//Stripe Payment Popup 
-$("#sendButton").click(function () {
-  $(".email_popup").removeClass("email_popup_");
-  $(".payment_popup").addClass("payment_popup_");
-});
-$(".col5_close").click(function () {
-  $(".fixed_side1").removeClass("fixed_side1_"),
-  $(".payment_popup").removeClass("payment_popup_");
-  $("body").removeClass("scroll_stop")
-});
 
 
 // payment_gobakc
