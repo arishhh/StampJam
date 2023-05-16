@@ -476,6 +476,18 @@ img.mfp-img {
 }
 
 
+
+
+/* TRILOK NEW CSS HERE */
+.settings-menu-dropdown {
+  position: relative;
+}
+.settings-menu-dropdown .dropdown-menu{
+  min-width: 180px !important;
+}
+
+
+
 @media screen and (max-width: 800px) and (orientation: landscape),
 screen and (max-height: 300px) {
 
@@ -9260,6 +9272,12 @@ table>tbody>tr>td:first-child:before {
     margin-left: auto;
     margin-bottom: 15px;
   }
+  .requestfeature_popup, .feedback_popup {
+    width: 95%;
+    max-height: 98vh;
+    padding: 20px 0px 25px;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -12023,6 +12041,53 @@ body.fixed_side1 {
   padding-top: 2.5rem;
 }
 
+/* Trilok */
+.language_popup {
+  position: fixed;
+  left: 0%;
+  right: -200%;
+  width: 45%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  padding: 20px 25px 25px;
+  background: #fff;
+  border-top: 5px solid var(--color-secondary);
+  /* transform: scale(0) translateY(-50%); */
+  transition: 0.5s;
+  height: 100%;
+  height: 35vh;
+  overflow-y: hidden;
+  border-radius: 15px;
+  border: 1px solid #2967e6;
+  padding-top: 2.5rem;
+}
+
+.language_popup_{
+  right: 0;
+}
+.language_popup .main_language{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.language_popup .main_language .row{
+  width:100%;
+}
+.language_popup .myheading{
+  position: relative;
+  width: 100%;
+}
+.language_popup .section-heading h6{
+  font: 24px !important;
+}
+.language_popup .myselect{
+  width: 100%;
+}
+
 /* Email Popup CSS Starts */
 .email_popup {
   position: fixed;
@@ -12194,6 +12259,7 @@ body.fixed_side1 {
 .pl-ziro { padding-left: 0px; }
 
 /* Stripe popup ends */
+/* Trilok */
 
 @media (max-width:1125px) {
   .email_popup, .payment_popup{
@@ -12218,9 +12284,20 @@ body.fixed_side1 {
     border-left: none;
     border-bottom: 1px solid #cacaca;
   }
+  .language_popup {
+    width:55%;
+  }
+}
+@media (max-width:768px) {
+  .language_popup {
+    width:65%;
+  }
+  .primary-solid-btn {
+    margin-top: 0 !important;
+  }
 }
 @media (max-width:670px) {
-  .email_popup, .payment_popup{
+  .email_popup, .payment_popup, .language_popup{
     width:80% !important;
   }
   .newleter-content label{
@@ -12242,6 +12319,13 @@ body.fixed_side1 {
     max-height: 90vh !important;
     height: 100%;
     width: 95% !important;
+  }
+  .language_popup{
+    width: 95% !important;
+    padding: 30px 7px 20px;
+  }
+  .language_popup .section-heading h4{
+    font-size: 18px !important;
   }
   .newletter-title h2{
     font-size: 1.2rem;
@@ -12852,7 +12936,7 @@ body.fixed_side1 {
 }
 
 .submit-request-form {
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 

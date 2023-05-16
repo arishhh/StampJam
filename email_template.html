@@ -6,182 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <meta name="google-site-verification" content="OBHSOz2bJypVuqhse4EbUNPh6u4nlzaqmKaLoOryaqs" />
-
     <style>
         @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Questrial&display=swap');
-
-
-        body {
-            background: #eaeaea;
-            font-family: 'Open Sans', sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-            overflow: auto;
-        }
-
-        .banner {
-            /* background: #3f3f3f; */
-            color: #00faaf;
-            text-align: center;
-            max-height: 300px;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .btn-primary{
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 1.1rem;
-            color: #3a3a3a;
-            text-decoration: none;
-            border: 2px solid #3a3a3a;
-            border-radius: 50px;
-            background-color: #00faaf;
-            transition: all 0.3s;
-            font-weight: 600;
-        }
-        .btn-primary:hover{
-            background-color: #6c03a3;
-            color: #fff;
-        }
-        .banner h2{
-            color: #fff;
-        }
-
-        .banner,
-        .email-content {
-            padding: 2em 5em;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        h1 {
-            font-family: 'Questrial', sans-serif;
-            font-size: 5em;
-            margin: 1em 0 0 0;
-        }
-        h3{
-            font-weight: 500;
-            color: #fff;
-        }
-
-        hr {
-            margin-top: 2em;
-            background: blue;
-        }
-
-        .btn_primary {
-            border: 1px solid #00faaf;
-            background: #00faaf;
-            color: #000;
-            border-radius: 100px;
-            padding: 10px 25px;
-            font-weight: 700;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .sig {
-            font-family: 'Dancing Script', cursive;
-            font-size: 3.5em;
-            margin: 0;
-        }
-
-        .email-container {
-            margin: 0 auto;
-            background: #3f3f3f;
-            color: #fff;
-            max-width: 1000px;
-            width: 1000px;
-            max-height: 700px;
-            overflow-x: auto;
-            background-image: url(img/email_template_bg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .footer_links {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 2rem;
-        }
-        .footer_links li{
-            list-style: none;
-        }
-        .footer_links li a{
-            color: #fff;
-            font-weight: 500;
-        }
     </style>
 </head>
 
-<body>
+<body style="font-family: 'Open Sans', sans-serif">
     <main>
-        <div class="email-container">
-            <div class="email-body">
-                <div class="banner">
-                    <h1><span>Thank You!</span></h1>
-                    
-                    <h2>Your files are attached in this email :)</h2>
+        <div class="email-container"
+            style="margin: 0 auto; background: #3f3f3f; color: #fff; max-width: 1000px; width: 1000px; max-height: 700px; background-image: url(https://stampjam.com/img/email_template_bg.png); background-repeat: no-repeat; background-size: cover;">
+            <div class="email-body" style="padding: 1rem;">
+                <div class="banner"
+                    style="color: #00faaf; text-align: center; max-height: 300px; height: 300px;align-items: center; justify-content: center; flex-direction: column;">
+                    <h1 style="font-family: 'Questrial', sans-serif; font-size: 5em; margin: 1em 0 0 0;"><span>Thank
+                            You!</span></h1>
 
-                <div class="contact"> 
-                    <h3>If you need any support, feel free to</h3>
-                    <a href="index.html" class="btn-primary">Contact us</a>
-                </div>
+                    <h2 style="color: #fff;">Your files are attached in this email :)</h2>
 
+                    <div class="contact">
+                        <h3 style="font-weight: 500; color: #fff;">If you need any support, feel free to</h3>
+                        <a href="stampjam.com/index.html" class="btn-primary"
+                            style="display: inline-block; padding: 12px 24px; font-size: 1.1rem; color: #3a3a3a !important; text-decoration: none; border: 2px solid #3a3a3a; border-radius: 50px; background-color: #00faaf; transition: all 0.3s; font-weight: 600; margin-bottom: 4rem;">Contact
+                            us</a>
+                    </div>
                 </div>
                 <div class="email-content">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                           <ul class="footer_links">
-                              <li class="nav-item custom-nav-item active">
-                                 <a class="nav-link custom-nav-link" href="index.html">
-                                    Home
-                                 </a>
-                              </li>
-                              <li class="nav-item custom-nav-item">
-                                 <a class="nav-link custom-nav-link" target="_blank" href="https://stampjam.com/app.php">
-                                    Designer
-                                 </a>
-                              </li>
-                              <li class="nav-item custom-nav-item">
-                                 <a class="nav-link custom-nav-link" target="_blank" href="templates.html">Templates</a>
-                              </li>
-                              <li class="nav-item custom-nav-item">
-                                 <a class="nav-link custom-nav-link" target="_blank" href="https://blog.stampjam.com/">
-                                    Blog
-                                 </a>
-                              </li>
-                              <li class="nav-item custom-nav-item">
-                                 <a class="nav-link custom-nav-link" target="_blank" href="#pricing">
-                                    Pricing &amp; Plans
-                                 </a>
-                              </li>
-                              <li class="nav-item custom-nav-item">
-                                 <a class="nav-link custom-nav-link" target="_blank" href="terms-condition.html">Terms &amp;
-                                    Conditions</a>
-                              </li>
-                           </ul>
+                            <ul class="footer_links"
+                                style="display: flex; width: 48%; margin: 2rem auto 0 auto; padding: 0; text-align: center;gap:10px;">
+                                <li class="nav-item custom-nav-item active" style="list-style: none;">
+                                    <a class="nav-link custom-nav-link" href="stampjam.com/index.html"
+                                        style="color: #fff; font-weight: 500;text-decoration: none;">Home</a>
+                                </li>
+                                <li class="nav-item custom-nav-item" style="list-style: none;">
+                                    <a class="nav-link custom-nav-link" target="_blank"
+                                        href="https://stampjam.com/app.php"
+                                        style="color: #fff; font-weight: 500;text-decoration: none;">Designer</a>
+                                </li>
+                                <li class="nav-item custom-nav-item" style="list-style: none;">
+                                    <a class="nav-link custom-nav-link" target="_blank" href="templates.html"
+                                        style="color: #fff; font-weight: 500;text-decoration: none;">Templates</a>
+                                </li>
+                                <li class="nav-item custom-nav-item" style="list-style: none;">
+                                    <a class="nav-link custom-nav-link" target="_blank"
+                                        href="https://blog.stampjam.com/"
+                                        style="color: #fff; font-weight: 500;text-decoration: none;">Blog</a>
+                                </li>
+                                <li class="nav-item custom-nav-item" style="list-style: none;">
+                                    <a class="nav-link custom-nav-link" target="_blank" href="stampjam.com/index.html#pricing"
+                                        style="color: #fff; font-weight: 500;text-decoration: none;">Pricing &amp; Plans</a>
+                                </li>
+                                <li class="nav-item custom-nav-item" style="list-style: none;">
+                                    <a class="nav-link custom-nav-link" target="_blank" href="stampjam.com/terms-condition.html"
+                                        style="color: #fff; font-weight: 500;text-decoration: none;">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-
 </body>
 
 </html>

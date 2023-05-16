@@ -69,6 +69,7 @@ a.download{
     background-color: #00faaf;
     transition: all 0.3s;
     font-weight: 600;
+    font-family: "Poppins", sans-serif;
 }
 .btn-primary:hover{
     background-color: #3a3a3a;

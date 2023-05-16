@@ -70,6 +70,21 @@ $(".col5_close").click(function () {
 $(".close").click(function () {
   $(".alert").css("display", "none");
 });
+// Feedback Request Alert
+$("#language_open").click(function () {
+  $(".fixed_side1").addClass("fixed_side1_");
+  $(".language_popup").addClass("language_popup_");
+  $("body").addClass("scroll_stop")
+});
+$(".col5_close").click(function () {
+  $(".fixed_side1").removeClass("fixed_side1_"),
+    $(".language_popup").removeClass("language_popup_");
+    $("body").removeClass("scroll_stop")
+});
+
+$(".close").click(function () {
+  $(".alert").css("display", "none");
+});
 
 
 // New Tab Content
