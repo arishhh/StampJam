@@ -12046,7 +12046,7 @@ body.fixed_side1 {
   position: fixed;
   left: 0%;
   right: -200%;
-  width: 45%;
+  width: 35%;
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
@@ -12057,7 +12057,7 @@ body.fixed_side1 {
   /* transform: scale(0) translateY(-50%); */
   transition: 0.5s;
   height: 100%;
-  height: 35vh;
+  height: 40vh;
   overflow-y: hidden;
   border-radius: 15px;
   border: 1px solid #2967e6;
@@ -12086,6 +12086,11 @@ body.fixed_side1 {
 }
 .language_popup .myselect{
   width: 100%;
+  text-align: center;
+}
+.selectLang{
+  width: 35%;
+  margin: 0 auto;
 }
 
 /* Email Popup CSS Starts */
@@ -12259,6 +12264,7 @@ body.fixed_side1 {
 .pl-ziro { padding-left: 0px; }
 
 /* Stripe popup ends */
+
 /* Trilok */
 
 @media (max-width:1125px) {
@@ -13217,3 +13223,35 @@ text-align:center;
   }
 }
 
+
+@media screen and (max-width:1200px){
+  .selectLang{
+    width:50%;
+  }
+}
+@media screen and (max-width:960px){
+  .language_popup {
+    width:50%;
+  }
+}
+@media screen and (max-width:680px){
+  .language_popup {
+      width: 65%;
+  }
+}
+@media screen and (max-width:520px){
+  .language_popup {
+      width: 75%;
+  }
+  .section-heading h4{
+      font-size:18px;
+  }
+}
+@media screen and (max-width:430px){
+  .language_popup {
+      width: 95%;
+  }
+  .section-heading h4 {
+    font-size: 16px;
+  }
+}

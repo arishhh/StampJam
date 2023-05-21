@@ -136,6 +136,11 @@ a.download:hover{
 .social-links {
   margin-top: 1rem;
   margin-bottom: 3rem;
+  margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links a {
@@ -150,7 +155,10 @@ a.download:hover{
   border: 1px solid #3a3a3a;
   border-radius: 50%;
   text-align: center;
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
 }
 .btnFlex{
     display: flex;
