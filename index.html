@@ -29,8 +29,28 @@
 
    <!-- ==========------- POPUP STARTS ==========------- -->
 
-   <!-- Pricing Popup Starts -->
+
    <div class="fixed_side1"></div>
+
+   <!-- Alert Popup -->
+   <div class="fixed_side2 fixed_side2_"></div>
+   <div class="alert_popup alert_popup_">
+      <div class="alert_inner">
+         <h2>Alert</h2>
+         <hr style="width: 100%;">
+         <p>
+            Certain parts of the site are down. We're working on it and apologize for the inconvenience. Thanks for your patience.
+         </p>
+
+         <div class="d-flex btnHolder">
+            <button class="btn primary-solid-btn animated-btn" id="close_alert">
+               Ok
+            </button>
+         </div>
+      </div>
+   </div>
+
+   <!-- Pricing Popup Starts -->
    <div class="pricing_popup" id="popup">
       <div class="col5_close">
          <img src="img/close.png" alt="" class="hvr-pop">
@@ -96,8 +116,8 @@
                </div>
             </div>
          </div>
-           <!-- Basic Pricing -->
-           <div class="pricing_box pricing_box1">
+         <!-- Basic Pricing -->
+         <div class="pricing_box pricing_box1">
             <!-- Card Top Section -->
             <div class="pricing_top">
                <div class="badge">BASIC</div>
@@ -175,7 +195,8 @@
                <form name="subscribe" id="subscribe_popup">
                   <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
                      <div class="form-group">
-                        <input id="sendEmail" class="form-control" name="email" type="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <input id="sendEmail" class="form-control" name="email" type="email" placeholder="Email Address"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                      </div>
                   </div>
 
@@ -198,101 +219,111 @@
    </div>
    <!-- Email Popup Ends -->
 
-      <!-- Language Popup Starts -->
-      <div class="language_popup">
-         <div class="col5_close">
-            <img src="img/close.png" alt="" class="hvr-pop">
-         </div>
-         <!-- Enter Email Popup Here -->
-         <div class="main_language justify-content-between">
-            <div class="row justify-content-center myheading">
-               <div class="col-md-12 col-lg-12">
-                  <div class="section-heading text-center">
-                     <h4>Choose your language</h4>
-                  </div>
-               </div>
-            </div>
-
-            <div class="row my-3">
-               <div class="selectLang">
-                  <select class="form-select form-select-lg mb-3 myselect p-1" aria-label=".form-select-lg example">
-                     <option selected>English</option>
-                     <option value="1">Hindi</option>
-                     <option value="2">Tamil</option>
-                     <option value="3">Telegu</option>
-                  </select>
-               </div>
-            </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-               <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
-                  Go
-               </button>
-            </div>
-
-         </div>
+   <!-- Language Popup Starts -->
+   <div class="language_popup">
+      <div class="col5_close">
+         <img src="img/close.png" alt="" class="hvr-pop">
       </div>
-      <!-- Language Popup Ends -->
+      <!-- Enter Email Popup Here -->
+      <div class="main_language justify-content-between">
+         <div class="row justify-content-center myheading">
+            <div class="col-md-12 col-lg-12">
+               <div class="section-heading text-center">
+                  <h4>Choose your language</h4>
+               </div>
+            </div>
+         </div>
+
+         <div class="row my-3">
+            <div class="selectLang">
+               <select class="form-select form-select-lg mb-3 myselect p-1" aria-label=".form-select-lg example">
+                  <option selected>English</option>
+                  <option value="1">Hindi</option>
+                  <option value="2">Tamil</option>
+                  <option value="3">Telegu</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
+               Go
+            </button>
+         </div>
+
+      </div>
+   </div>
+   <!-- Language Popup Ends -->
 
    <!-- Payment Popup Starts -->
    <div class="payment_popup">
       <div class="col5_close">
          <img src="img/close.png" alt="" class="hvr-pop">
       </div>
-      
+
       <div class="back_btn">
          <i class="fa-solid fa-circle-arrow-left" id="payment_goBack"></i>
       </div>
       <div class="innerFlex_2">
          <div class="flexLeft">
-           <div class="selected_package">
-            <div class="package"><h5>Platinum</h5></div>
-            <div class="price"><h1>US$2.99</h1><h6>+GST</h6></div>
-            <ul>
-               <li>
-                  <span class="fa-regular fa-check"></span>
-                  <p>Format - <b class="font-weight-bolder">PDF</b>, <b class="font-weight-bolder">SVG</b>, <b
-                        class="font-weight-bolder">EPS</b>, <b class="font-weight-bolder">PNG</b></p>
-               </li>
-               <li>
-                  <span class="fa-regular fa-check"></span>
-                  <p>Background - <b class="font-weight-bolder">Transparent</b></p>
-               </li>
-               <li>
-                  <span class="fa-regular fa-check"></span>
-                  <p>Color - </p>
-                  <div class="color_pick" style="background: black;"></div>
-                  <div class="color_pick" style="background: red;"></div>
-                  <div class="color_pick" style="background: green;"></div>
-                  <div class="color_pick" style="background: blue;"></div>
-               </li>
-            </ul>
-           </div>
+            <div class="selected_package">
+               <div class="package">
+                  <h5>Platinum</h5>
+               </div>
+               <div class="price">
+                  <h1>US$2.99</h1>
+                  <h6>+GST</h6>
+               </div>
+               <ul>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Format - <b class="font-weight-bolder">PDF</b>, <b class="font-weight-bolder">SVG</b>, <b
+                           class="font-weight-bolder">EPS</b>, <b class="font-weight-bolder">PNG</b></p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Background - <b class="font-weight-bolder">Transparent</b></p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Color - </p>
+                     <div class="color_pick" style="background: black;"></div>
+                     <div class="color_pick" style="background: red;"></div>
+                     <div class="color_pick" style="background: green;"></div>
+                     <div class="color_pick" style="background: blue;"></div>
+                  </li>
+               </ul>
+            </div>
 
             <div class="selected_package">
-            <div class="package"><h5>Gold</h5></div>
-            <div class="price"><h1>US$2.49</h1><h6>+GST</h6></div>
-            <ul>
-               <li>
-                  <span class="fa-regular fa-check"></span>
-                  <p>Format - <b class="font-weight-bolder">PNG</b></p>
-               </li>
-               <li>
-                  <span class="fa-regular fa-check"></span>
-                  <p>Background - <b class="font-weight-bolder">Transparent</b></p>
-               </li>
-               <li>
-                  <span class="fa-regular fa-check"></span>
-                  <p>Color - </p>
-                  <div class="color_pick" style="background: black;"></div>
-                  <div class="color_pick" style="background: red;"></div>
-                  <div class="color_pick" style="background: green;"></div>
-                  <div class="color_pick" style="background: blue;"></div>
-               </li>
-            </ul>
-           </div>
+               <div class="package">
+                  <h5>Gold</h5>
+               </div>
+               <div class="price">
+                  <h1>US$2.49</h1>
+                  <h6>+GST</h6>
+               </div>
+               <ul>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Format - <b class="font-weight-bolder">PNG</b></p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Background - <b class="font-weight-bolder">Transparent</b></p>
+                  </li>
+                  <li>
+                     <span class="fa-regular fa-check"></span>
+                     <p>Color - </p>
+                     <div class="color_pick" style="background: black;"></div>
+                     <div class="color_pick" style="background: red;"></div>
+                     <div class="color_pick" style="background: green;"></div>
+                     <div class="color_pick" style="background: blue;"></div>
+                  </li>
+               </ul>
+            </div>
 
-           <div class="payment_method_icons">
+            <div class="payment_method_icons">
                <div class="payment_img mastercard">
 
                </div>
@@ -308,67 +339,74 @@
                <div class="payment_img union">
 
                </div>
-           </div>
+            </div>
          </div>
          <div class="flexRight">
             <div class="container">
                <div class="row">
-                   <div class="col-xs-12 col-md-12">
-                       <div class="panel panel-default">
-                           <div class="panel-heading">
-                               <h3 class="panel-title">
-                                   Payment Details
-                               </h3>
-                               <div class="checkbox pull-right">
-                                   <label>
-                                       <input type="checkbox" />
-                                       Remember
-                                   </label>
-                               </div>
+                  <div class="col-xs-12 col-md-12">
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">
+                              Payment Details
+                           </h3>
+                           <div class="checkbox pull-right">
+                              <label>
+                                 <input type="checkbox" />
+                                 Remember
+                              </label>
                            </div>
-                           <div class="panel-body">
-                               <form role="form">
-                               <div class="form-group">
-                                   <label for="cardNumber">
-                                       CARD NUMBER</label>
-                                   <div class="input-group">
-                                       <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
-                                           required autofocus />
-                                       <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                                   </div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-xs-7 col-md-7">
-                                       <div class="form-group">
-                                           <label for="expityMonth">
-                                               EXPIRY DATE</label>
-                                           <div class="col-xs-6 col-lg-6 pl-ziro">
-                                               <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
-                                           </div>
-                                           <div class="col-xs-6 col-lg-6 pl-ziro">
-                                               <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                        </div>
+                        <div class="panel-body">
+                           <form role="form">
+                              <div class="form-group">
+                                 <label for="cardNumber">
+                                    CARD NUMBER</label>
+                                 <div class="input-group">
+                                    <input type="text" class="form-control" id="cardNumber"
+                                       placeholder="Valid Card Number" required autofocus />
+                                    <span class="input-group-addon"><span
+                                          class="glyphicon glyphicon-lock"></span></span>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                       <label for="expityMonth">
+                                          EXPIRY DATE</label>
+                                       <div class="col-xs-6 col-lg-6 pl-ziro">
+                                          <input type="text" class="form-control" id="expityMonth" placeholder="MM"
+                                             required />
                                        </div>
-                                   </div>
-                                   <div class="col-xs-5 col-md-5 pull-right">
-                                       <div class="form-group">
-                                           <label for="cvCode">
-                                               CV CODE</label>
-                                           <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                       <div class="col-xs-6 col-lg-6 pl-ziro">
+                                          <input type="text" class="form-control" id="expityYear" placeholder="YY"
+                                             required />
                                        </div>
-                                   </div>
-                               </div>
-                               </form>
-                           </div>
-                       </div>
-                       <ul class="nav nav-pills nav-stacked">
-                           <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
-                           </li>
-                       </ul>
-                       <br/>
-                       <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
-                   </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                       <label for="cvCode">
+                                          CV CODE</label>
+                                       <input type="password" class="form-control" id="cvCode" placeholder="CV"
+                                          required />
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#"><span class="badge pull-right"><span
+                                    class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                        </li>
+                     </ul>
+                     <br />
+                     <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block"
+                        role="button">Pay</a>
+                  </div>
                </div>
-           </div>
+            </div>
          </div>
       </div>
    </div>
@@ -376,249 +414,249 @@
 
    <!-- Feature Form Popup Starts -->
    <script>
-            const select = document.getElementById('select1');
-            const options = select.options;
-            for (let i = 1; i < options.length; i++) {
-               options[i].disabled = true;
-            }
-            select.addEventListener('change', function () {
-               for (let i = 1; i < options.length; i++) {
-                  options[i].disabled = false;
-               }
-            });
+      const select = document.getElementById('select1');
+      const options = select.options;
+      for (let i = 1; i < options.length; i++) {
+         options[i].disabled = true;
+      }
+      select.addEventListener('change', function () {
+         for (let i = 1; i < options.length; i++) {
+            options[i].disabled = false;
+         }
+      });
    </script>
    <div class="fixed_side1"></div>
    <div class="requestfeature_popup">
-            <div class="col5_close">
-               <img src="img/close.png" alt="" class="hvr-pop">
-            </div>
-            <section class="submit-request-form">
-               <div class="container">
-                  <div class="row justify-content-center">
-                     <div class="col-md-9 col-lg-8">
-                        <div class="section-heading text-center">
-                           <h2>REQUEST A FEATURE</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-12 col-lg-12">
-                        <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
-                           enctype="multipart/form-data" target="_blank">
-                           <div class="row">
-                              <div class="col-lg-6 col-md-6 col-sm-12">
-                                 <div class="form-group">
-                                    <label for="select1">I would like to request a new:</label>
-                                    <select id="select1"
-                                       class="crumina--select input--squared select2-hidden-accessible form-control"
-                                       data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true" required>
-                                       <option data-display="Domain Registrations" value="">Select an option</option>
-                                       <option value="1">Shape</option>
-                                       <option value="2">Text</option>
-                                       <option value="3">Image</option>
-                                       <option value="4">Template</option>
-                                       <option value="5">Other</option>
-                                    </select>
-                                 </div>
-                                 <div class="form-group">
-                                    <label for="name">Your Name <span class="required">*</span></label>
-                                    <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
-                                       required>
-                                 </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12">
-                                 <div class="form-group">
-                                    <label for="submitEmail">Your email <span class="required">*</span></label>
-                                    <input id="submitEmail" class="form-control" name="email" type="email"
-                                       placeholder="Email Address" required>
-                                 </div>
-                                 <div class="form-group input-file-wrap">
-                                    <label for="upfile">Attachments</label>
-                                    <span class="upfile-btn">Upload your file</span>
-                                    <input id="upfile" type="file" name="upload" class="form-control" />
-      
-                                 </div>
-                              </div>
-                              <div class="col-lg-12 col-md-12 col-sm-12">
-                                 <div class="form-group">
-                                    <label for="descr">Provide a detailed description <span class="required">*</span></label>
-                                    <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?"
-                                       rows="4" required></textarea>
-                                    <p class="small mt-2">Please enter the details of your request. A member of our
-                                       support staff will respond as soon as possible.</p>
-                                 </div>
-                              </div>
-                              <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                                 <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
-                                    Submit Request
-                                 </button>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
+      <div class="col5_close">
+         <img src="img/close.png" alt="" class="hvr-pop">
+      </div>
+      <section class="submit-request-form">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-md-9 col-lg-8">
+                  <div class="section-heading text-center">
+                     <h2>REQUEST A FEATURE</h2>
                   </div>
                </div>
-            </section>
-            <script>
-               document.addEventListener("DOMContentLoaded", function () {
-                  const select = document.getElementById('select1');
-                  const nameInput = document.getElementById('name');
-                  const emailInput = document.getElementById('submitEmail');
-                  const fileInput = document.getElementById('upfile');
-                  const descrInput = document.getElementById('descr');
-                  const options = select.options;
+            </div>
+            <div class="row">
+               <div class="col-md-12 col-lg-12">
+                  <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
+                     enctype="multipart/form-data" target="_blank">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="select1">I would like to request a new:</label>
+                              <select id="select1"
+                                 class="crumina--select input--squared select2-hidden-accessible form-control"
+                                 data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true" required>
+                                 <option data-display="Domain Registrations" value="">Select an option</option>
+                                 <option value="1">Shape</option>
+                                 <option value="2">Text</option>
+                                 <option value="3">Image</option>
+                                 <option value="4">Template</option>
+                                 <option value="5">Other</option>
+                              </select>
+                           </div>
+                           <div class="form-group">
+                              <label for="name">Your Name <span class="required">*</span></label>
+                              <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
+                                 required>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="submitEmail">Your email <span class="required">*</span></label>
+                              <input id="submitEmail" class="form-control" name="email" type="email"
+                                 placeholder="Email Address" required>
+                           </div>
+                           <div class="form-group input-file-wrap">
+                              <label for="upfile">Attachments</label>
+                              <span class="upfile-btn">Upload your file</span>
+                              <input id="upfile" type="file" name="upload" class="form-control" />
+
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                           <div class="form-group">
+                              <label for="descr">Provide a detailed description <span class="required">*</span></label>
+                              <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?"
+                                 rows="4" required></textarea>
+                              <p class="small mt-2">Please enter the details of your request. A member of our
+                                 support staff will respond as soon as possible.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                           <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
+                              Submit Request
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const select = document.getElementById('select1');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('submitEmail');
+            const fileInput = document.getElementById('upfile');
+            const descrInput = document.getElementById('descr');
+            const options = select.options;
+            nameInput.setAttribute('disabled', true);
+            emailInput.setAttribute('disabled', true);
+            fileInput.setAttribute('disabled', true);
+            descrInput.setAttribute('disabled', true);
+            select.addEventListener('change', function () {
+               if (select.value === '') {
                   nameInput.setAttribute('disabled', true);
                   emailInput.setAttribute('disabled', true);
                   fileInput.setAttribute('disabled', true);
                   descrInput.setAttribute('disabled', true);
-                  select.addEventListener('change', function () {
-                     if (select.value === '') {
-                        nameInput.setAttribute('disabled', true);
-                        emailInput.setAttribute('disabled', true);
-                        fileInput.setAttribute('disabled', true);
-                        descrInput.setAttribute('disabled', true);
-                        for (let i = 1; i < options.length; i++) {
-                        }
-                     } else {
-                        nameInput.removeAttribute('disabled');
-                        emailInput.removeAttribute('disabled');
-                        fileInput.removeAttribute('disabled');
-                        descrInput.removeAttribute('disabled');
-                     }
-                     if (select.value === '') {
-                        nameInput.setAttribute('disabled', true);
-                        emailInput.setAttribute('disabled', true);
-                        fileInput.setAttribute('disabled', true);
-                        descrInput.setAttribute('disabled', true);
-                     }
-                  });
-               });
-      
-      
-      
-            </script>
+                  for (let i = 1; i < options.length; i++) {
+                  }
+               } else {
+                  nameInput.removeAttribute('disabled');
+                  emailInput.removeAttribute('disabled');
+                  fileInput.removeAttribute('disabled');
+                  descrInput.removeAttribute('disabled');
+               }
+               if (select.value === '') {
+                  nameInput.setAttribute('disabled', true);
+                  emailInput.setAttribute('disabled', true);
+                  fileInput.setAttribute('disabled', true);
+                  descrInput.setAttribute('disabled', true);
+               }
+            });
+         });
+
+
+
+      </script>
    </div>
    <script>
-            document.addEventListener("DOMContentLoaded", function () {
-               const select = document.getElementById('select1');
-               const nameInput = document.getElementById('name');
-               const emailInput = document.getElementById('submitEmail');
-               const fileInput = document.getElementById('upfile');
-               const descrInput = document.getElementById('descr');
-               const options = select.options;
+      document.addEventListener("DOMContentLoaded", function () {
+         const select = document.getElementById('select1');
+         const nameInput = document.getElementById('name');
+         const emailInput = document.getElementById('submitEmail');
+         const fileInput = document.getElementById('upfile');
+         const descrInput = document.getElementById('descr');
+         const options = select.options;
+         nameInput.setAttribute('disabled', true);
+         emailInput.setAttribute('disabled', true);
+         fileInput.setAttribute('disabled', true);
+         descrInput.setAttribute('disabled', true);
+         select.addEventListener('change', function () {
+            if (select.value === '') {
                nameInput.setAttribute('disabled', true);
                emailInput.setAttribute('disabled', true);
                fileInput.setAttribute('disabled', true);
                descrInput.setAttribute('disabled', true);
-               select.addEventListener('change', function () {
-                  if (select.value === '') {
-                     nameInput.setAttribute('disabled', true);
-                     emailInput.setAttribute('disabled', true);
-                     fileInput.setAttribute('disabled', true);
-                     descrInput.setAttribute('disabled', true);
-                     for (let i = 1; i < options.length; i++) {
-                     }
-                  } else {
-                     nameInput.removeAttribute('disabled');
-                     emailInput.removeAttribute('disabled');
-                     fileInput.removeAttribute('disabled');
-                     descrInput.removeAttribute('disabled');
-                  }
-                  if (select.value === '') {
-                     nameInput.setAttribute('disabled', true);
-                     emailInput.setAttribute('disabled', true);
-                     fileInput.setAttribute('disabled', true);
-                     descrInput.setAttribute('disabled', true);
-                  }
-               });
-            });
-      
+               for (let i = 1; i < options.length; i++) {
+               }
+            } else {
+               nameInput.removeAttribute('disabled');
+               emailInput.removeAttribute('disabled');
+               fileInput.removeAttribute('disabled');
+               descrInput.removeAttribute('disabled');
+            }
+            if (select.value === '') {
+               nameInput.setAttribute('disabled', true);
+               emailInput.setAttribute('disabled', true);
+               fileInput.setAttribute('disabled', true);
+               descrInput.setAttribute('disabled', true);
+            }
+         });
+      });
+
    </script>
    <!-- Feature Form Popup Ends -->
 
 
    <!-- Feedback form Popup Starts -->
    <div class="submit-request-form feedback_popup">
-         <div class="container">
-            <div class="col5_close">
-               <img src="img/close.png" alt="" class="hvr-pop">
-            </div>
-            <div class="row justify-content-center">
-               <div class="col-md-9 col-lg-8">
-                  <div class="section-heading text-center">
-                     <h2>Submit Feedback</h2>
-                  </div>
+      <div class="container">
+         <div class="col5_close">
+            <img src="img/close.png" alt="" class="hvr-pop">
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-8">
+               <div class="section-heading text-center">
+                  <h2>Submit Feedback</h2>
                </div>
-               <div class="row">
-                  <div class="col-md-12 col-lg-12">
-                     <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
-                        enctype="multipart/form-data" target="_blank">
-                        <div class="row">
-   
-                           <div class="col-md-12 col-lg-12">
-                              <div id="full-stars-example-two">
-                                 <div class="rating-group">
-                                    <input disabled checked class="rating__input rating__input--none" name="rating"
-                                       id="rating3-none" value="0" type="radio">
-   
-                                    <label aria-label="1 star" class="rating__label" for="rating3-1"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-1" value="1" type="radio"
-                                       required>
-   
-                                    <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-2" value="2" type="radio">
-   
-                                    <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-3" value="3" type="radio">
-   
-                                    <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-4" value="4" type="radio">
-   
-                                    <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
-                                          class="rating__icon rating__icon--star fa fa-star"></i></label>
-                                    <input class="rating__input" name="rating" id="rating3-5" value="5" type="radio">
-                                 </div>
-                              </div>
-                           </div>
-   
-                           <div class="col-lg-6 col-md-6 col-sm-12">
-                              <div class="form-group">
-                                 <label for="name">Your Name <span class="required">*</span></label>
-                                 <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
+            </div>
+            <div class="row">
+               <div class="col-md-12 col-lg-12">
+                  <form action="https://formspree.io/f/xdovawgr" method="POST" class="submit-request-form"
+                     enctype="multipart/form-data" target="_blank">
+                     <div class="row">
+
+                        <div class="col-md-12 col-lg-12">
+                           <div id="full-stars-example-two">
+                              <div class="rating-group">
+                                 <input disabled checked class="rating__input rating__input--none" name="rating"
+                                    id="rating3-none" value="0" type="radio">
+
+                                 <label aria-label="1 star" class="rating__label" for="rating3-1"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-1" value="1" type="radio"
                                     required>
+
+                                 <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-2" value="2" type="radio">
+
+                                 <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-3" value="3" type="radio">
+
+                                 <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-4" value="4" type="radio">
+
+                                 <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
+                                       class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                 <input class="rating__input" name="rating" id="rating3-5" value="5" type="radio">
                               </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-12">
-                              <div class="form-group">
-                                 <label for="submitEmail">Your email <span class="required">*</span></label>
-                                 <input id="submitEmail" class="form-control" name="email" type="email"
-                                    placeholder="Email Address" required>
-                              </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12">
-                              <div class="form-group">
-                                 <label for="descr">Provide a detailed description <span class="required">*</span></label>
-                                 <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?"
-                                    rows="4" required></textarea>
-                                 <p class="small mt-2">Please enter the details of your request. A member of our
-                                    support staff will respond as soon as possible.</p>
-                              </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                              <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
-                                 Submit Feedback
-                              </button>
                            </div>
                         </div>
-                     </form>
-                  </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="name">Your Name <span class="required">*</span></label>
+                              <input id="name" class="form-control" name="name" type="text" placeholder="Your Name"
+                                 required>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <div class="form-group">
+                              <label for="submitEmail">Your email <span class="required">*</span></label>
+                              <input id="submitEmail" class="form-control" name="email" type="email"
+                                 placeholder="Email Address" required>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                           <div class="form-group">
+                              <label for="descr">Provide a detailed description <span class="required">*</span></label>
+                              <textarea id="descr" class="form-control" name="desc" placeholder="How can we help you?"
+                                 rows="4" required></textarea>
+                              <p class="small mt-2">Please enter the details of your request. A member of our
+                                 support staff will respond as soon as possible.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                           <button type="submit" id="sendButton" class="btn primary-solid-btn sendBtn">
+                              Submit Feedback
+                           </button>
+                        </div>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
+      </div>
    </div>
    <!-- Feedback form Popup Ends -->
 
@@ -950,7 +988,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover" >Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -962,7 +1001,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -974,7 +1014,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -986,7 +1027,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -998,7 +1040,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1010,7 +1053,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1022,7 +1066,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1034,7 +1079,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1046,7 +1092,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1058,7 +1105,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1070,7 +1118,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1082,7 +1131,8 @@
                            <img src="img/t1.png " alt="">
                         </div>
                         <div class="action-wrap mt-3">
-                           <a href="#" class="btn primary-solid btn_onhover">Customize<span class="fas fa-long-arrow-alt-right"></span></a>
+                           <a href="#" class="btn primary-solid btn_onhover">Customize<span
+                                 class="fas fa-long-arrow-alt-right"></span></a>
                         </div>
                      </div>
                   </div>
@@ -1159,14 +1209,15 @@
                               <h6>$2.99 <span>+GST</span></h6>
                            </div>
                            <div class="pricing_btn">
-                              <a class="btn primary-solid-btn animated-btn" href="https://stampjam.com/app.php" target="_blank">
+                              <a class="btn primary-solid-btn animated-btn" href="https://stampjam.com/app.php"
+                                 target="_blank">
                                  Get Started <span class="fas fa-long-arrow-alt-right"></span>
                               </a>
                            </div>
                         </div>
                      </div>
 
-                     
+
                      <!-- Basic Pricing -->
                      <div class="pricing_box pricing_box1">
                         <!-- Card Top Section -->
@@ -1217,7 +1268,8 @@
                               <h6>$2.49 <span>+GST</span></h6>
                            </div>
                            <div class="pricing_btn">
-                              <a class="btn primary-solid-btn animated-btn" href="https://stampjam.com/app.php" target="_blank">
+                              <a class="btn primary-solid-btn animated-btn" href="https://stampjam.com/app.php"
+                                 target="_blank">
                                  Get Started <span class="fas fa-long-arrow-alt-right"></span>
                               </a>
                            </div>

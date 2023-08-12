@@ -5255,7 +5255,7 @@ screen and (max-height: 300px) {
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 /* line 40, src/assets/scss/vendors/owl.theme.default.css */
@@ -11955,7 +11955,7 @@ body.fixed_side1 {
   overflow: hidden;
 }
 
-.fixed_side1 {
+.fixed_side1, .fixed_side2{
   position: fixed;
   left: 0%;
   top: 0%;
@@ -11970,9 +11970,39 @@ body.fixed_side1 {
   overflow: hidden !important;
 }
 
-.fixed_side1_ {
+.fixed_side1_, .fixed_side2_ {
   z-index: 998;
   opacity: 1;
+}
+.alert_popup{
+  position: fixed;
+  left: 50%;
+  width: 40%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 20px;
+  background: #fff;
+  border-top: 5px solid var(--color-secondary);
+  /* transform: scale(0) translateY(-50%); */
+  transition: 0.5s;
+  height: max-content;
+  overflow-y: auto;
+  border-radius: 15px;
+  border: 1px solid #2967e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: none;
+}
+.alert_popup_ {
+  display: block;
+}
+.alert_popup .btnHolder{
+  width: 100%;
+  justify-content: end;
 }
 
 .pricing_popup {
@@ -12268,7 +12298,7 @@ body.fixed_side1 {
 /* Trilok */
 
 @media (max-width:1125px) {
-  .email_popup, .payment_popup{
+  .email_popup, .payment_popup, .alert_popup{
     width:60% !important;
   }
 }
@@ -12303,7 +12333,7 @@ body.fixed_side1 {
   }
 }
 @media (max-width:670px) {
-  .email_popup, .payment_popup, .language_popup{
+  .email_popup, .payment_popup, .language_popup, .alert_popup{
     width:80% !important;
   }
   .newleter-content label{
@@ -12320,6 +12350,11 @@ body.fixed_side1 {
     height: 60vh;
     padding: .5rem;
     padding: 1.5rem;
+  }
+  .alert_popup{
+    padding: 10px;
+    max-height: 40vh;
+    width: 95% !important;
   }
   .payment_popup{
     max-height: 90vh !important;
