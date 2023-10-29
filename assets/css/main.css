@@ -13309,6 +13309,7 @@ text-align:center;
   z-index: 9999;
   width: 100%;
   text-align: center;
+  margin-top: 20px;
 }
 
 .navbar-dark .navbar-toggler-icon{
@@ -13368,4 +13369,28 @@ text-align:center;
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
+}
+
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: 0.2em 0.2em 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #00faaf;
+  background: #00faaf;
+  font-weight: normal;
+  color: #000;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: #035ded;
+  background: #035ded;
+  font-weight: normal;
+  color: #ffffff;
 }
