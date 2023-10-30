@@ -13394,3 +13394,17 @@ text-align:center;
   font-weight: normal;
   color: #ffffff;
 }
+
+.tab-pane-content ol, .tab-pane-content ul{
+  margin-bottom:1.25em;
+}
+
+.tab-pane-content ol li{
+  list-style: decimal;
+  margin-left: 1.25em;
+}
+
+.tab-pane-content ul li{
+  list-style: disc;
+  margin-left: 1.25em;
+}
